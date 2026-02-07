@@ -5,15 +5,21 @@ FROM rust:1.81-slim-bookworm as builder
 RUN apt-get update && apt-get install -y \
     pkg-config \
     libssl-dev \
+    lld \
+    clang \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
 
-# Copy the entire workspace to get access to lib and bin
+# Copy the entire workspace
 COPY . .
 
+# Optimize for low-memory environment
+ENV RUSTFLAGS="-C link-arg=-fuse-ld=lld"
+ENV CARGO_INCREMENTAL=0
+
 # Build the server specifically
-# -j 1 limits parallel jobs to save RAM during compilation
+# -j 1 limits parallel jobs to save RAM
 RUN cargo build --release --bin server -j 1
 
 # Final stage
