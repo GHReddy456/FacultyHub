@@ -1,0 +1,380 @@
+﻿cargo :    Compiling 
+rust_lib_vitapmate v0.1.0 (C
+:\Users\harig\Downloads\facu
+lty-availability-tracker-mai
+n\faculty-availability-track
+er-main_orchids\rust_vtop\ru
+st)
+At line:1 char:1
++ cargo run --bin 
+debug_timetable 24MIS7049 
+"Madhavi@1543" 2>&1 | Out-F 
+...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~
+    + CategoryInfo          
+    : NotSpecified: (   Co  
+  mpiling ru...rust_vtop\   
+ rust):String) [], Remot    
+eException
+    + FullyQualifiedErrorId 
+    : NativeCommandError
+ 
+    Finished `dev` profile 
+[unoptimized + debuginfo] 
+target(s) in 19.37s
+     Running `target\debug\d
+ebug_timetable.exe 
+24MIS7049 Madhavi@1543`
+Attempting login for user: 
+24MIS7049
+Login attempt with:
+Username: 24MIS7049
+Captcha Answer: XUZAZ9
+Response URL: https://vtop.v
+itap.ac.in/vtop/login/error
+Response Status: 200 OK
+Login failed. Searching for 
+error messages...
+Unknown error. Snippet: 
+<!DOCTYPE html>
+<!--[if lt IE 7]>      
+<html class="no-js lt-ie9 
+lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         
+<html class="no-js lt-ie9 
+lt-ie8"> <![endif]-->
+<!--[if IE 8]>         
+<html class="no-js lt-ie9"> 
+<![endif]-->
+<!--[if gt IE 8]>      
+<html class="no-js"> 
+<![endif]-->
+<html>
+
+<head>
+
+    
+
+        <meta 
+charset="utf-8">
+        <base href="https://
+vtop.vitap.ac.in/vtop/" />
+        <meta http-equiv="X-
+UA-Compatible" 
+content="IE=edge">
+        <title>VIT-AP - 
+VTOP</title>
+        <meta 
+name="description" 
+content="">
+        <meta content="width
+=device-width, 
+initial-scale=1, 
+maximum-scale=1, 
+user-scalable=no" 
+name="viewport" />
+        <meta 
+charset="ISO-8859-1">
+        <meta 
+name="description" 
+content="vtop" />
+        <meta name="robots" 
+content="NOODP,NOYDIR" />
+        <meta 
+name="keywords" content=" 
+vtop " />
+        <meta name="robots" 
+content="index, follow" />
+        <link rel="icon" 
+type="image/png" href="asset
+s/img/favicon.ico">
+        <meta 
+http-equiv="cache-control" 
+content="max-age=0" />
+        <meta 
+http-equiv="cache-control" 
+content="no-cache" />
+        <meta 
+http-equiv="expires" 
+content="0" />
+        <meta http-equiv="X-
+UA-Compatible" 
+content="IE-Edge" />
+    
+    <link rel="stylesheet" 
+type="text/css" 
+href="/vtop/get/bs/css/1">
+    <link rel="stylesheet" 
+type="text/css" 
+href="/vtop/get/ic/css/2">
+    <link rel="stylesheet" 
+type="text/css" href="/vtop/
+assets/css/PreLogin.css" />
+    <script src="https://www
+.google.com/recaptcha/api.js
+" async="async" 
+defer="defer"></script>
+
+</head>
+
+
+<body 
+class="WhiteBackground">
+    
+        <nav class="navbar 
+navbar-expand-lg bg-light 
+headerBackgroundColor py-1 
+fixed-top shadow" 
+id="vtopOpenPageHeader">
+            <div 
+class="container-fluid 
+justify-content-start">
+                <a 
+class="navbar-brand" 
+href="javacript:void(0);">
+                    <img src
+="/vtop/assets/img/VIT_AP_lo
+go.png" width='170px' 
+alt="" />
+                </a>
+            
+Login attempt 1 failed: Auth
+enticationFailed("Unknown 
+error content. URL: https://
+vtop.vitap.ac.in/vtop/login/
+error")
+Login attempt with:
+Username: 24MIS7049
+Captcha Answer: YT9H92
+Response URL: https://vtop.v
+itap.ac.in/vtop/login/error
+Response Status: 200 OK
+Login failed. Searching for 
+error messages...
+Unknown error. Snippet: 
+<!DOCTYPE html>
+<!--[if lt IE 7]>      
+<html class="no-js lt-ie9 
+lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         
+<html class="no-js lt-ie9 
+lt-ie8"> <![endif]-->
+<!--[if IE 8]>         
+<html class="no-js lt-ie9"> 
+<![endif]-->
+<!--[if gt IE 8]>      
+<html class="no-js"> 
+<![endif]-->
+<html>
+
+<head>
+
+    
+
+        <meta 
+charset="utf-8">
+        <base href="https://
+vtop.vitap.ac.in/vtop/" />
+        <meta http-equiv="X-
+UA-Compatible" 
+content="IE=edge">
+        <title>VIT-AP - 
+VTOP</title>
+        <meta 
+name="description" 
+content="">
+        <meta content="width
+=device-width, 
+initial-scale=1, 
+maximum-scale=1, 
+user-scalable=no" 
+name="viewport" />
+        <meta 
+charset="ISO-8859-1">
+        <meta 
+name="description" 
+content="vtop" />
+        <meta name="robots" 
+content="NOODP,NOYDIR" />
+        <meta 
+name="keywords" content=" 
+vtop " />
+        <meta name="robots" 
+content="index, follow" />
+        <link rel="icon" 
+type="image/png" href="asset
+s/img/favicon.ico">
+        <meta 
+http-equiv="cache-control" 
+content="max-age=0" />
+        <meta 
+http-equiv="cache-control" 
+content="no-cache" />
+        <meta 
+http-equiv="expires" 
+content="0" />
+        <meta http-equiv="X-
+UA-Compatible" 
+content="IE-Edge" />
+    
+    <link rel="stylesheet" 
+type="text/css" 
+href="/vtop/get/bs/css/1">
+    <link rel="stylesheet" 
+type="text/css" 
+href="/vtop/get/ic/css/2">
+    <link rel="stylesheet" 
+type="text/css" href="/vtop/
+assets/css/PreLogin.css" />
+    <script src="https://www
+.google.com/recaptcha/api.js
+" async="async" 
+defer="defer"></script>
+
+</head>
+
+
+<body 
+class="WhiteBackground">
+    
+        <nav class="navbar 
+navbar-expand-lg bg-light 
+headerBackgroundColor py-1 
+fixed-top shadow" 
+id="vtopOpenPageHeader">
+            <div 
+class="container-fluid 
+justify-content-start">
+                <a 
+class="navbar-brand" 
+href="javacript:void(0);">
+                    <img src
+="/vtop/assets/img/VIT_AP_lo
+go.png" width='170px' 
+alt="" />
+                </a>
+            
+Login attempt 2 failed: Auth
+enticationFailed("Unknown 
+error content. URL: https://
+vtop.vitap.ac.in/vtop/login/
+error")
+Login attempt with:
+Username: 24MIS7049
+Captcha Answer: MNB4NR
+Response URL: https://vtop.v
+itap.ac.in/vtop/login/error
+Response Status: 200 OK
+Login failed. Searching for 
+error messages...
+Unknown error. Snippet: 
+<!DOCTYPE html>
+<!--[if lt IE 7]>      
+<html class="no-js lt-ie9 
+lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         
+<html class="no-js lt-ie9 
+lt-ie8"> <![endif]-->
+<!--[if IE 8]>         
+<html class="no-js lt-ie9"> 
+<![endif]-->
+<!--[if gt IE 8]>      
+<html class="no-js"> 
+<![endif]-->
+<html>
+
+<head>
+
+    
+
+        <meta 
+charset="utf-8">
+        <base href="https://
+vtop.vitap.ac.in/vtop/" />
+        <meta http-equiv="X-
+UA-Compatible" 
+content="IE=edge">
+        <title>VIT-AP - 
+VTOP</title>
+        <meta 
+name="description" 
+content="">
+        <meta content="width
+=device-width, 
+initial-scale=1, 
+maximum-scale=1, 
+user-scalable=no" 
+name="viewport" />
+        <meta 
+charset="ISO-8859-1">
+        <meta 
+name="description" 
+content="vtop" />
+        <meta name="robots" 
+content="NOODP,NOYDIR" />
+        <meta 
+name="keywords" content=" 
+vtop " />
+        <meta name="robots" 
+content="index, follow" />
+        <link rel="icon" 
+type="image/png" href="asset
+s/img/favicon.ico">
+        <meta 
+http-equiv="cache-control" 
+content="max-age=0" />
+        <meta 
+http-equiv="cache-control" 
+content="no-cache" />
+        <meta 
+http-equiv="expires" 
+content="0" />
+        <meta http-equiv="X-
+UA-Compatible" 
+content="IE-Edge" />
+    
+    <link rel="stylesheet" 
+type="text/css" 
+href="/vtop/get/bs/css/1">
+    <link rel="stylesheet" 
+type="text/css" 
+href="/vtop/get/ic/css/2">
+    <link rel="stylesheet" 
+type="text/css" href="/vtop/
+assets/css/PreLogin.css" />
+    <script src="https://www
+.google.com/recaptcha/api.js
+" async="async" 
+defer="defer"></script>
+
+</head>
+
+
+<body 
+class="WhiteBackground">
+    
+        <nav class="navbar 
+navbar-expand-lg bg-light 
+headerBackgroundColor py-1 
+fixed-top shadow" 
+id="vtopOpenPageHeader">
+            <div 
+class="container-fluid 
+justify-content-start">
+                <a 
+class="navbar-brand" 
+href="javacript:void(0);">
+                    <img src
+="/vtop/assets/img/VIT_AP_lo
+go.png" width='170px' 
+alt="" />
+                </a>
+            
+Login attempt 3 failed: Auth
+enticationFailed("Unknown 
+error content. URL: https://
+vtop.vitap.ac.in/vtop/login/
+error")
+{"details":"AuthenticationFailed(\"Unknown error content. URL: https://vtop.vitap.ac.in/vtop/login/error\")","error":"Login failed after 3 attempts"}

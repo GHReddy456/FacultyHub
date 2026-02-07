@@ -1,0 +1,353 @@
+﻿cargo :     Finished `dev` 
+profile [unoptimized + 
+debuginfo] target(s) in 
+0.95s
+At line:1 char:1
++ cargo run --bin 
+debug_timetable 24MIS7049 
+"Madhavi@1543" 2>&1 | Out-F 
+...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~
+    + CategoryInfo          
+    : NotSpecified: (    F  
+  inished `d...get(s) in    
+ 0.95s:String) [], Remot    
+eException
+    + FullyQualifiedErrorId 
+    : NativeCommandError
+ 
+     Running `target\debug\d
+ebug_timetable.exe 
+24MIS7049 Madhavi@1543`
+Attempting login for user: 
+24MIS7049
+Login attempt with:
+Username: 24MIS7049
+Captcha Answer: A2SF4E
+Login responded with ERROR 
+URL. Response text snippet:
+<!DOCTYPE html>
+<!--[if lt IE 7]>      
+<html class="no-js lt-ie9 
+lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         
+<html class="no-js lt-ie9 
+lt-ie8"> <![endif]-->
+<!--[if IE 8]>         
+<html class="no-js lt-ie9"> 
+<![endif]-->
+<!--[if gt IE 8]>      
+<html class="no-js"> 
+<![endif]-->
+<html>
+
+<head>
+
+    
+
+        <meta 
+charset="utf-8">
+        <base href="https://
+vtop.vitap.ac.in/vtop/" />
+        <meta http-equiv="X-
+UA-Compatible" 
+content="IE=edge">
+        <title>VIT-AP - 
+VTOP</title>
+        <meta 
+name="description" 
+content="">
+        <meta content="width
+=device-width, 
+initial-scale=1, 
+maximum-scale=1, 
+user-scalable=no" 
+name="viewport" />
+        <meta 
+charset="ISO-8859-1">
+        <meta 
+name="description" 
+content="vtop" />
+        <meta name="robots" 
+content="NOODP,NOYDIR" />
+        <meta 
+name="keywords" content=" 
+vtop " />
+        <meta name="robots" 
+content="index, follow" />
+        <link rel="icon" 
+type="image/png" href="asset
+s/img/favicon.ico">
+      
+Login attempt 1 failed: Auth
+enticationFailed("Unknown 
+error content: <!DOCTYPE 
+html>\r\n<!--[if lt IE 7]>  
+    <html class=\"no-js 
+lt-ie9 lt-ie8 lt-ie7\"> 
+<![endif]-->\r\n<!--[if IE 
+7]>         <html 
+class=\"no-js lt-ie9 
+lt-ie8\"> 
+<![endif]-->\r\n<!--[if IE 
+8]>         <html 
+class=\"no-js lt-ie9\"> 
+<![endif]-->\r\n<!--[if gt 
+IE 8]>      <html 
+class=\"no-js\"> <![endif]--
+>\r\n<html>\r\n\r\n<head>\r\
+n\r\n    \r\n\r\n        
+<meta 
+charset=\"utf-8\">\r\n      
+  <base href=\"https://vtop.
+vitap.ac.in/vtop/\" />\r\n  
+      <meta http-equiv=\"X-U
+A-Compatible\" 
+content=\"IE=edge\">\r\n    
+    <title>VIT-AP - 
+VTOP</title>\r\n        
+<meta name=\"description\" 
+content=\"\">\r\n        
+<meta content=\"width=device
+-width, initial-scale=1, 
+maximum-scale=1, 
+user-scalable=no\" 
+name=\"viewport\" />\r\n    
+    <meta 
+charset=\"ISO-8859-1\">\r\n 
+       <meta 
+name=\"description\" 
+content=\"vtop\" />\r\n     
+   <meta name=\"robots\" 
+content=\"NOODP,NOYDIR\" 
+/>\r\n        <meta 
+name=\"keywords\" 
+content=\" vtop \" />\r\n   
+     <meta name=\"robots\" 
+content=\"index, follow\" 
+/>\r\n        <link 
+rel=\"icon\" 
+type=\"image/png\" href=\"as
+sets/img/favicon.ico\">\r\n 
+     ")
+Login attempt with:
+Username: 24MIS7049
+Captcha Answer: QVYN7G
+Login responded with ERROR 
+URL. Response text snippet:
+<!DOCTYPE html>
+<!--[if lt IE 7]>      
+<html class="no-js lt-ie9 
+lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         
+<html class="no-js lt-ie9 
+lt-ie8"> <![endif]-->
+<!--[if IE 8]>         
+<html class="no-js lt-ie9"> 
+<![endif]-->
+<!--[if gt IE 8]>      
+<html class="no-js"> 
+<![endif]-->
+<html>
+
+<head>
+
+    
+
+        <meta 
+charset="utf-8">
+        <base href="https://
+vtop.vitap.ac.in/vtop/" />
+        <meta http-equiv="X-
+UA-Compatible" 
+content="IE=edge">
+        <title>VIT-AP - 
+VTOP</title>
+        <meta 
+name="description" 
+content="">
+        <meta content="width
+=device-width, 
+initial-scale=1, 
+maximum-scale=1, 
+user-scalable=no" 
+name="viewport" />
+        <meta 
+charset="ISO-8859-1">
+        <meta 
+name="description" 
+content="vtop" />
+        <meta name="robots" 
+content="NOODP,NOYDIR" />
+        <meta 
+name="keywords" content=" 
+vtop " />
+        <meta name="robots" 
+content="index, follow" />
+        <link rel="icon" 
+type="image/png" href="asset
+s/img/favicon.ico">
+      
+Login attempt 2 failed: Auth
+enticationFailed("Unknown 
+error content: <!DOCTYPE 
+html>\r\n<!--[if lt IE 7]>  
+    <html class=\"no-js 
+lt-ie9 lt-ie8 lt-ie7\"> 
+<![endif]-->\r\n<!--[if IE 
+7]>         <html 
+class=\"no-js lt-ie9 
+lt-ie8\"> 
+<![endif]-->\r\n<!--[if IE 
+8]>         <html 
+class=\"no-js lt-ie9\"> 
+<![endif]-->\r\n<!--[if gt 
+IE 8]>      <html 
+class=\"no-js\"> <![endif]--
+>\r\n<html>\r\n\r\n<head>\r\
+n\r\n    \r\n\r\n        
+<meta 
+charset=\"utf-8\">\r\n      
+  <base href=\"https://vtop.
+vitap.ac.in/vtop/\" />\r\n  
+      <meta http-equiv=\"X-U
+A-Compatible\" 
+content=\"IE=edge\">\r\n    
+    <title>VIT-AP - 
+VTOP</title>\r\n        
+<meta name=\"description\" 
+content=\"\">\r\n        
+<meta content=\"width=device
+-width, initial-scale=1, 
+maximum-scale=1, 
+user-scalable=no\" 
+name=\"viewport\" />\r\n    
+    <meta 
+charset=\"ISO-8859-1\">\r\n 
+       <meta 
+name=\"description\" 
+content=\"vtop\" />\r\n     
+   <meta name=\"robots\" 
+content=\"NOODP,NOYDIR\" 
+/>\r\n        <meta 
+name=\"keywords\" 
+content=\" vtop \" />\r\n   
+     <meta name=\"robots\" 
+content=\"index, follow\" 
+/>\r\n        <link 
+rel=\"icon\" 
+type=\"image/png\" href=\"as
+sets/img/favicon.ico\">\r\n 
+     ")
+Login attempt with:
+Username: 24MIS7049
+Captcha Answer: 8XLREH
+Login responded with ERROR 
+URL. Response text snippet:
+<!DOCTYPE html>
+<!--[if lt IE 7]>      
+<html class="no-js lt-ie9 
+lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         
+<html class="no-js lt-ie9 
+lt-ie8"> <![endif]-->
+<!--[if IE 8]>         
+<html class="no-js lt-ie9"> 
+<![endif]-->
+<!--[if gt IE 8]>      
+<html class="no-js"> 
+<![endif]-->
+<html>
+
+<head>
+
+    
+
+        <meta 
+charset="utf-8">
+        <base href="https://
+vtop.vitap.ac.in/vtop/" />
+        <meta http-equiv="X-
+UA-Compatible" 
+content="IE=edge">
+        <title>VIT-AP - 
+VTOP</title>
+        <meta 
+name="description" 
+content="">
+        <meta content="width
+=device-width, 
+initial-scale=1, 
+maximum-scale=1, 
+user-scalable=no" 
+name="viewport" />
+        <meta 
+charset="ISO-8859-1">
+        <meta 
+name="description" 
+content="vtop" />
+        <meta name="robots" 
+content="NOODP,NOYDIR" />
+        <meta 
+name="keywords" content=" 
+vtop " />
+        <meta name="robots" 
+content="index, follow" />
+        <link rel="icon" 
+type="image/png" href="asset
+s/img/favicon.ico">
+      
+Login attempt 3 failed: Auth
+enticationFailed("Unknown 
+error content: <!DOCTYPE 
+html>\r\n<!--[if lt IE 7]>  
+    <html class=\"no-js 
+lt-ie9 lt-ie8 lt-ie7\"> 
+<![endif]-->\r\n<!--[if IE 
+7]>         <html 
+class=\"no-js lt-ie9 
+lt-ie8\"> 
+<![endif]-->\r\n<!--[if IE 
+8]>         <html 
+class=\"no-js lt-ie9\"> 
+<![endif]-->\r\n<!--[if gt 
+IE 8]>      <html 
+class=\"no-js\"> <![endif]--
+>\r\n<html>\r\n\r\n<head>\r\
+n\r\n    \r\n\r\n        
+<meta 
+charset=\"utf-8\">\r\n      
+  <base href=\"https://vtop.
+vitap.ac.in/vtop/\" />\r\n  
+      <meta http-equiv=\"X-U
+A-Compatible\" 
+content=\"IE=edge\">\r\n    
+    <title>VIT-AP - 
+VTOP</title>\r\n        
+<meta name=\"description\" 
+content=\"\">\r\n        
+<meta content=\"width=device
+-width, initial-scale=1, 
+maximum-scale=1, 
+user-scalable=no\" 
+name=\"viewport\" />\r\n    
+    <meta 
+charset=\"ISO-8859-1\">\r\n 
+       <meta 
+name=\"description\" 
+content=\"vtop\" />\r\n     
+   <meta name=\"robots\" 
+content=\"NOODP,NOYDIR\" 
+/>\r\n        <meta 
+name=\"keywords\" 
+content=\" vtop \" />\r\n   
+     <meta name=\"robots\" 
+content=\"index, follow\" 
+/>\r\n        <link 
+rel=\"icon\" 
+type=\"image/png\" href=\"as
+sets/img/favicon.ico\">\r\n 
+     ")
+{"details":"AuthenticationFailed(\"Unknown error content: <!DOCTYPE html>\\r\\n<!--[if lt IE 7]>      <html class=\\\"no-js lt-ie9 lt-ie8 lt-ie7\\\"> <![endif]-->\\r\\n<!--[if IE 7]>         <html class=\\\"no-js lt-ie9 lt-ie8\\\"> <![endif]-->\\r\\n<!--[if IE 8]>         <html class=\\\"no-js lt-ie9\\\"> <![endif]-->\\r\\n<!--[if gt IE 8]>      <html class=\\\"no-js\\\"> <![endif]-->\\r\\n<html>\\r\\n\\r\\n<head>\\r\\n\\r\\n    \\r\\n\\r\\n        <meta charset=\\\"utf-8\\\">\\r\\n        <base href=\\\"https://vtop.vitap.ac.in/vtop/\\\" />\\r\\n        <meta http-equiv=\\\"X-UA-Compatible\\\" content=\\\"IE=edge\\\">\\r\\n        <title>VIT-AP - VTOP</title>\\r\\n        <meta name=\\\"description\\\" content=\\\"\\\">\\r\\n        <meta content=\\\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\\\" name=\\\"viewport\\\" />\\r\\n        <meta charset=\\\"ISO-8859-1\\\">\\r\\n        <meta name=\\\"description\\\" content=\\\"vtop\\\" />\\r\\n        <meta name=\\\"robots\\\" content=\\\"NOODP,NOYDIR\\\" />\\r\\n        <meta name=\\\"keywords\\\" content=\\\" vtop \\\" />\\r\\n        <meta name=\\\"robots\\\" content=\\\"index, follow\\\" />\\r\\n        <link rel=\\\"icon\\\" type=\\\"image/png\\\" href=\\\"assets/img/favicon.ico\\\">\\r\\n      \")","error":"Login failed after 3 attempts"}

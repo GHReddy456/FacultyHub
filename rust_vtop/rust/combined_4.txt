@@ -1,0 +1,1580 @@
+﻿cargo :    Compiling 
+rust_lib_vitapmate v0.1.0 (C
+:\Users\harig\Downloads\facu
+lty-availability-tracker-mai
+n\faculty-availability-track
+er-main_orchids\rust_vtop\ru
+st)
+At line:1 char:1
++ cargo run --bin 
+debug_timetable 24MIS7049 
+"Madhavi@1543" 2>&1 | Out-F 
+...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~
+    + CategoryInfo          
+    : NotSpecified: (   Co  
+  mpiling ru...rust_vtop\   
+ rust):String) [], Remot    
+eException
+    + FullyQualifiedErrorId 
+    : NativeCommandError
+ 
+    Finished `dev` profile 
+[unoptimized + debuginfo] 
+target(s) in 18.77s
+     Running `target\debug\d
+ebug_timetable.exe 
+24MIS7049 Madhavi@1543`
+Attempting login for user: 
+24MIS7049
+Initial page loaded. Form 
+snippet:
+<form class="text-center" 
+id="stdForm" action="/vtop/p
+relogin/setup" 
+method="post"><input 
+type="hidden" name="_csrf" v
+alue="72ab22cc-db12-4045-847
+6-95c52a89ef7e"/>
+                    <input 
+type="hidden" name="flag" 
+value="VTOP" />
+                    <a 
+href="javascript:void(0);" 
+class="text-decoration-none"
+                        oncl
+ick="javascript:submitForm('
+stdForm')">
+                        
+<div class="d-flex 
+jusitfy-content-start 
+align-items-stretch">
+                            
+<div class="w-50">
+                            
+    <img src="/vtop/assets/i
+mg/students.png" 
+class="img-responsive 
+center imgSize"
+                            
+        alt="..." />
+                            
+</div>
+                            
+<div class="flex-grow-1">
+                            
+    <div class="fw-bold 
+text-primary d-block 
+d-lg-none h6">Student</div>
+                            
+    <div class="fw-bold 
+text-primary d-none 
+d-lg-block h5">Student</div>
+                            
+    <button type="submit" 
+class="btn btn-primary 
+fw-bold"><i
+                            
+            class="fa 
+fa-sign-in 
+fa-3"></i></button>
+                            
+</div>
+                        
+</div>
+                    </a>
+                </form>
+Login page loaded. 
+Searching for form fields...
+Full Login Form: <form 
+id="vtopLoginForm" 
+name="vtopLoginForm" 
+class="form-signin" 
+method="POST"
+                            
+    
+action="/vtop/login"><input 
+type="hidden" name="_csrf" v
+alue="72ab22cc-db12-4045-847
+6-95c52a89ef7e"/>
+
+                            
+    <!-- USERID -->
+
+                            
+    <div class="input-group 
+input-group-sm mb-3">
+                            
+        <input type="text" 
+class="form-control" 
+placeholder="Username" 
+aria-label="Username"
+                            
+            aria-describedby
+="basic-addon1" 
+id="username" 
+name="username"
+                            
+            
+onkeyup="this.value = 
+this.value.toUpperCase()" 
+autocomplete="off">
+                            
+        <span 
+class="input-group-text" 
+id="basic-addon1"><i 
+class="fa fa-user 
+text-primary"
+                            
+                aria-hidden=
+"true"></i></span>
+                            
+    </div>
+
+                            
+    <!-- PASSWORD -->
+
+                            
+    <div class="input-group 
+input-group-sm mb-3">
+                            
+        <input 
+type="password" 
+class="form-control" 
+placeholder="Password" 
+id="password"
+                            
+            name="password" 
+aria-describedby="basic-addo
+n2">
+                            
+        <button 
+id="basic-addon2" 
+class="btn btn-light 
+border-secondary" 
+type="button">
+                            
+            <i class="fa 
+fa-eye text-danger fw-bold" 
+id="passwordIcon"
+                            
+                onclick="jav
+ascript:toggleEye();" 
+aria-hidden="false"></i>
+                            
+        </button>
+                            
+    </div>
+
+                            
+    <!-- IN BUILT CAPTCHA  
+-->
+
+                            
+    
+
+                            
+        <div class="row">
+                            
+            <div 
+class="col-7 mx-auto">
+                            
+                <div 
+class="input-group 
+input-group-sm border  
+mb-3" id="captchaBlock">
+                            
+                    
+
+                            
+                        
+<img class="form-control 
+img-fluid bg-light 
+border-0" height="325"
+                            
+                            
+src="data:image/jpeg;base64,
+/9j/4AAQSkZJRgABAgAAAQABAAD/
+2wBDAAgGBgcGBQgHBwcJCQgKDBQN
+DAsLDBkSEw8UHRofHh0aHBwgJC4n
+ICIsIxwcKDcpLDAxNDQ0Hyc5PTgy
+PC4zNDL/2wBDAQkJCQwLDBgNDRgy
+IRwhMjIyMjIyMjIyMjIyMjIyMjIy
+MjIyMjIyMjIyMjIyMjIyMjIyMjIy
+MjIyMjIyMjIyMjL/wAARCAAoAMgD
+ASIAAhEBAxEB/8QAHwAAAQUBAQEB
+AQEAAAAAAAAAAAECAwQFBgcICQoL
+/8QAtRAAAgEDAwIEAwUFBAQAAAF9
+AQIDAAQRBRIhMUEGE1FhByJxFDKB
+kaEII0KxwRVS0fAkM2JyggkKFhcY
+GRolJicoKSo0NTY3ODk6Q0RFRkdI
+SUpTVFVWV1hZWmNkZWZnaGlqc3R1
+dnd4eXqDhIWGh4iJipKTlJWWl5iZ
+mqKjpKWmp6ipqrKztLW2t7i5usLD
+xMXGx8jJytLT1NXW19jZ2uHi4+Tl
+5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQF
+BgcICQoL/8QAtREAAgECBAQDBAcF
+BAQAAQJ3AAECAxEEBSExBhJBUQdh
+cRMiMoEIFEKRobHBCSMzUvAVYnLR
+ChYkNOEl8RcYGRomJygpKjU2Nzg5
+OkNERUZHSElKU1RVVldYWVpjZGVm
+Z2hpanN0dXZ3eHl6goOEhYaHiImK
+kpOUlZaXmJmaoqOkpaanqKmqsrO0
+tba3uLm6wsPExcbHyMnK0tPU1dbX
+2Nna4uPk5ebn6Onq8vP09fb3+Pn6
+/9oADAMBAAIRAxEAPwD3eSRi5AJA
+HHFR0VC1yiMVcMvoSODQIjv5JIrf
+dH64PB4/z/WnrCHUMs8xBGR81JJN
+BPG0XmD5gRkjpXiXxI8LXFnfQeId
+GtpozktdNbKQYpF+YTZByMjOSAAC
+mSctUVJOMbpXOnCUI16ns5S5b7Ht
+/lz/APPx/wCOCjy5/wDn4/8AHBXm
+Vx8YbRfB1le+THLq00hins4pWTy9
+vV8lTwflwP8AaIydprX8E6Xa6ppk
+OuDw9a6LOzE25SJC7RlcbwwCkA5Y
+e456EUKpGTsiqmDq0oOdRWV7dN/v
+udt5c/8Az8f+OCjy5/8An4/8cFV/
+sM//AD+yfr/jXLaz450nw3rjaTfa
+lIkohErSbPMVcnhCBlg2OemMEHPI
+qnJLdnPTpTqO0Fd+R2O24XgOj+7D
+H8qP9J/6Y/rWNpurSazp0Ooadcme
+0mzsk8ornDFTwRnqDWN4+tdS1PwR
+qVpb/wCkTMqMIUX5m2urEDjk4B47
+9Bmhu0bocKd6qpy01s/L/hjr5JLi
+KNnbycKM96SKaWZcxvAw/HivBfDH
+wp1DxBpst1dXMmmSpKYxbz2rb2AC
+ncMkcEkj8KXUtN8ZfDRoblb0vpgk
+8uI+bujJJLbTGTlSQpJK9MnDc1j7
+aSV5R0PReXUpTdOnWTl2at+J77m5
+HOIj7DPNHmT/APPv/wCPiuU0fxkd
+Q8HN4gSItBDE7zRgh3jKAllOCOwy
+M4yCDxmud/4XdpH/AD433/fpP/jl
+aOpBbs44YOvNtRi3bRnpvmT/APPv
+/wCPijzJ/wDn3/8AHxXCaR8XdA1O
+byJC9nJ/C11iNW6nqCQMY7kdRjNd
+5byvNGWeJoyDjBqoyUldGdWjUpPl
+qJoehYqCy7T6ZzTq+ePhr4I03xl/
+an9oz3cX2Tytn2d1XO7fnO5T/dFe
+xeEvBGm+Dftn9nT3cv2vZv8AtDq2
+Nu7GNqj+8azp1JT1todWLwlLDtw5
+7yXS363OloorhdZ+LXhvRtTmsHW+
+uZYWZJTbwjajhiCvzsuSMdRkc9au
+UlHdnLSoVKztTjc7qisPwx4s0vxb
+p73emyODG22WCUASRntkAng4yCCR
+17ggblNNNXRM4ShJxkrNBRRRTIHL
+Iykckj0optFABRRRQAhAYYYAj0NM
+MMRGPLX8qkooA8Q0DxD4nu/iXH4c
+udc8yCG8likf7JEPNWLcSMAZG4Jj
+g8Z74r2aGxit4Y4YWeOKNQiIhAVV
+AwAAOgFeWaF4K8Q2fxdl1y40/Zpr
+Xl1KJvOjPyuJNp2ht3O4du9euVjR
+5rPm7no5lKk5x9la1le1t9exzviz
+xFF4R0N9SuZXk+YRQQqnMkhBIUns
+MAkk9gepwD5x4i0DQ7bw4fEfiHTd
+SsJ9WvFkkt4HjklhciQ4BdRtDAlm
+XqDtGBjFWvijZ61N420y7s9EuNWt
+La1VhA1vJNB5hd87gvfhCRnnAzkc
+Vy/jfxR4u1vRYbbX9C+wWi3CyJL9
+kliy4VgFy5I6FjjrxWdWerTWx3YH
+CtRg4S+LfXW3RJfieueAHtF8EacN
+JiuXsf3nlG6ZRJ/rGzu28dc4x2xT
+/HUU954OvYEuIdPlLRMl1PN5aRlZ
+UYEuPunjj3xXI/B7WNcmtItJn03y
+9Ggt5ZILzyHHmP5vK7ydp+8/AGfl
+9jXY+P8ASr3W/BGo6dp0PnXc3l7I
+9yrnEiseWIHQGtYy5qWi6HDVpulj
+rSf2r3+fX9TL+HkM0Hh6dNT1iHV5
+DdsVuYLlrhVGxPk3HkHqce+e9X/G
+cph8J3zWFimozjy9tlLC0ySfvFzl
+OpwOfwzXmmieH/ir4csns9Jtfs8D
+yGVk8y1fLEAE5Yk9FFaWl/DXxdrG
+sxaz4i1yW0m5JMUxe4QbjlFK/KgI
+LY2kgZ+71AhTly8qizoqYakqzrSq
+xte+mt/ktjZ8OeT/AMK511r3SJtE
+idbhrq1jUhpMwje8av8AdB5AXoNt
+c54Jj+Hri/yenl/8hx7dT/F/q8/+
+Pf8AAa9U10f2X4R1Oa0+SW1sJWhk
+f52DLGSpJbJY8Dk5z3rzz4a6nrfj
+L+1P7R127i+yeVs+zwwLndvzndGf
+7optJSiuvoTTlKdGrUWkbr7T/wAn
+f7zD8WeHPDmq3aPoOr+H7J42Zbnf
+diNHO1CuwDK4AzkrxknuDj2XRnkt
+dGsbW+mMl5DBHFNIxLb3CgM2Tycn
+PJ5qtD4P8P280c0OkWMcsbB0dLaM
+MrA5BBC8EVcv7CS5tJkVg7mNggLm
+Mk4OB5i/Mv1HI61cIcrcjlxGJ9rC
+NNNtLvueej4J6A1n5a6tfG78vHmB
+o9m/HXZtzjPON2ccZ71B8KNX1S28
+Qav4T1G5e6WyVvLcyFliMTiMquRn
+acjA4A29OTUt0/xSjlu4LbRbF4jJ
+IIpvOjZlUk7SCXXOARjKjOBkdave
+A/ByeGp7m+1W7ll1m53LJKrttCkg
+4yeSSQCSR/UnNRXOuRWO2pWl9Xms
+RNSb2s03f5bHo1cdr/iHw78O5Ekk
+02USapJLK8lrEpaRg25i7MwJ5kOO
+uOQMCupRJCuY7nK9jgH9aqaZq8Gs
+WS3unXVreW5xzC/IOAcH+6cEZBwR
+W0lfbc8qlLld5JuPXW3pqec/CjSB
+L4g1fxIkljbxXCssWn20yStCkjhx
+u2H5ANu0AgHg8DHPrNeIeF7i2i+N
+tz/wjkY/sqRZFlW2TegTywWwccL5
+oGCMDoBwRXtwOVBwRkdDWdD4bHZm
+aftlJ9Un6eTFooorY84KKKKAHSKV
+c8cHpTaKKACiiigAooooAKw/FPha
+x8XaZFYX8txHFHMJgbdlDbgrDuDx
+8xoopNJqzLhOUJKUXZoteH9EtvDm
+iW+k2byvBBu2tMQWO5ixyQAOrHtW
+lRRQlZWQpScpOUt2FFFFMkrajYxa
+npl3YTM6xXULwuUIDBWUg4z35rD8
+JeCNN8G/bP7Onu5ftezf9odWxt3Y
+xtUf3jRRScU3c0VWcYOmno90dLRR
+RTMwpkkUcoxIit9R0oooAqGxkiff
+aylM9VbpXnd18JvDL3jNKuo2SNjE
+cE6lF4HTerH3PzH+lFFKUIy+JGtL
+EVaN3Tla513hTwboPheJn0qJpJ5F
+2SXUz7pGGc47Be3AAzgZyRXSUUUJ
+JKyJnUnUlzTd2FFFFMgVVLHAoooo
+A//Z"
+                            
+                            
+aria-describedby="button-add
+on2" />
+
+                            
+                        
+<button class="btn 
+btn-success" type="button"
+                            
+                            
+onclick="loadCaptcha()" 
+id="button-addon2"> <i
+                            
+                            
+    class="fa fa-refresh" ar
+ia-hidden="true"></i></butto
+n>
+                            
+                    
+                            
+                </div>
+                            
+            </div>
+                            
+        </div>
+                            
+        <div class="mb-3">
+                            
+            <input 
+type="text" 
+class="form-control 
+form-control-sm" 
+autocomplete="off"
+                            
+                
+maxlength="6" 
+onkeyup="this.value = 
+this.value.toUpperCase()"
+                            
+                
+id="captchaStr" 
+name="captchaStr" aria-descr
+ibedby="captchaHelp"
+                            
+                
+placeholder="Enter CAPTCHA 
+shown above">
+                            
+        </div>
+                            
+    
+
+                            
+    <!-- GOOGLE CAPTCHA  -->
+
+                            
+    
+
+                            
+    <button
+                            
+        type="button" onclic
+k="javascript:callBuiltValid
+ation();" id="submitBtn"
+                            
+        class="btn btn-sm 
+btn-primary 
+float-end">Submit</button>
+
+                            
+    
+                            
+</form>
+Login attempt with:
+Username: 24MIS7049
+Captcha Answer: Y4DP53
+Response URL: https://vtop.v
+itap.ac.in/vtop/login/error
+Response Status: 200 OK
+Login failed. Searching for 
+error messages...
+Unknown error. Snippet: 
+<!DOCTYPE html>
+<!--[if lt IE 7]>      
+<html class="no-js lt-ie9 
+lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         
+<html class="no-js lt-ie9 
+lt-ie8"> <![endif]-->
+<!--[if IE 8]>         
+<html class="no-js lt-ie9"> 
+<![endif]-->
+<!--[if gt IE 8]>      
+<html class="no-js"> 
+<![endif]-->
+<html>
+
+<head>
+
+    
+
+        <meta 
+charset="utf-8">
+        <base href="https://
+vtop.vitap.ac.in/vtop/" />
+        <meta http-equiv="X-
+UA-Compatible" 
+content="IE=edge">
+        <title>VIT-AP - 
+VTOP</title>
+        <meta 
+name="description" 
+content="">
+        <meta content="width
+=device-width, 
+initial-scale=1, 
+maximum-scale=1, 
+user-scalable=no" 
+name="viewport" />
+        <meta 
+charset="ISO-8859-1">
+        <meta 
+name="description" 
+content="vtop" />
+        <meta name="robots" 
+content="NOODP,NOYDIR" />
+        <meta 
+name="keywords" content=" 
+vtop " />
+        <meta name="robots" 
+content="index, follow" />
+        <link rel="icon" 
+type="image/png" href="asset
+s/img/favicon.ico">
+        <meta 
+http-equiv="cache-control" 
+content="max-age=0" />
+        <meta 
+http-equiv="cache-control" 
+content="no-cache" />
+        <meta 
+http-equiv="expires" 
+content="0" />
+        <meta http-equiv="X-
+UA-Compatible" 
+content="IE-Edge" />
+    
+    <link rel="stylesheet" 
+type="text/css" 
+href="/vtop/get/bs/css/1">
+    <link rel="stylesheet" 
+type="text/css" 
+href="/vtop/get/ic/css/2">
+    <link rel="stylesheet" 
+type="text/css" href="/vtop/
+assets/css/PreLogin.css" />
+    <script src="https://www
+.google.com/recaptcha/api.js
+" async="async" 
+defer="defer"></script>
+
+</head>
+
+
+<body 
+class="WhiteBackground">
+    
+        <nav class="navbar 
+navbar-expand-lg bg-light 
+headerBackgroundColor py-1 
+fixed-top shadow" 
+id="vtopOpenPageHeader">
+            <div 
+class="container-fluid 
+justify-content-start">
+                <a 
+class="navbar-brand" 
+href="javacript:void(0);">
+                    <img src
+="/vtop/assets/img/VIT_AP_lo
+go.png" width='170px' 
+alt="" />
+                </a>
+            
+Login attempt 1 failed: Auth
+enticationFailed("Unknown 
+error content. URL: https://
+vtop.vitap.ac.in/vtop/login/
+error")
+Initial page loaded. Form 
+snippet:
+<form class="text-center" 
+id="stdForm" action="/vtop/p
+relogin/setup" 
+method="post"><input 
+type="hidden" name="_csrf" v
+alue="72ab22cc-db12-4045-847
+6-95c52a89ef7e"/>
+                    <input 
+type="hidden" name="flag" 
+value="VTOP" />
+                    <a 
+href="javascript:void(0);" 
+class="text-decoration-none"
+                        oncl
+ick="javascript:submitForm('
+stdForm')">
+                        
+<div class="d-flex 
+jusitfy-content-start 
+align-items-stretch">
+                            
+<div class="w-50">
+                            
+    <img src="/vtop/assets/i
+mg/students.png" 
+class="img-responsive 
+center imgSize"
+                            
+        alt="..." />
+                            
+</div>
+                            
+<div class="flex-grow-1">
+                            
+    <div class="fw-bold 
+text-primary d-block 
+d-lg-none h6">Student</div>
+                            
+    <div class="fw-bold 
+text-primary d-none 
+d-lg-block h5">Student</div>
+                            
+    <button type="submit" 
+class="btn btn-primary 
+fw-bold"><i
+                            
+            class="fa 
+fa-sign-in 
+fa-3"></i></button>
+                            
+</div>
+                        
+</div>
+                    </a>
+                </form>
+Login page loaded. 
+Searching for form fields...
+Full Login Form: <form 
+id="vtopLoginForm" 
+name="vtopLoginForm" 
+class="form-signin" 
+method="POST"
+                            
+    
+action="/vtop/login"><input 
+type="hidden" name="_csrf" v
+alue="72ab22cc-db12-4045-847
+6-95c52a89ef7e"/>
+
+                            
+    <!-- USERID -->
+
+                            
+    <div class="input-group 
+input-group-sm mb-3">
+                            
+        <input type="text" 
+class="form-control" 
+placeholder="Username" 
+aria-label="Username"
+                            
+            aria-describedby
+="basic-addon1" 
+id="username" 
+name="username"
+                            
+            
+onkeyup="this.value = 
+this.value.toUpperCase()" 
+autocomplete="off">
+                            
+        <span 
+class="input-group-text" 
+id="basic-addon1"><i 
+class="fa fa-user 
+text-primary"
+                            
+                aria-hidden=
+"true"></i></span>
+                            
+    </div>
+
+                            
+    <!-- PASSWORD -->
+
+                            
+    <div class="input-group 
+input-group-sm mb-3">
+                            
+        <input 
+type="password" 
+class="form-control" 
+placeholder="Password" 
+id="password"
+                            
+            name="password" 
+aria-describedby="basic-addo
+n2">
+                            
+        <button 
+id="basic-addon2" 
+class="btn btn-light 
+border-secondary" 
+type="button">
+                            
+            <i class="fa 
+fa-eye text-danger fw-bold" 
+id="passwordIcon"
+                            
+                onclick="jav
+ascript:toggleEye();" 
+aria-hidden="false"></i>
+                            
+        </button>
+                            
+    </div>
+
+                            
+    <!-- IN BUILT CAPTCHA  
+-->
+
+                            
+    
+
+                            
+        <div class="row">
+                            
+            <div 
+class="col-7 mx-auto">
+                            
+                <div 
+class="input-group 
+input-group-sm border  
+mb-3" id="captchaBlock">
+                            
+                    
+
+                            
+                        
+<img class="form-control 
+img-fluid bg-light 
+border-0" height="325"
+                            
+                            
+src="data:image/jpeg;base64,
+/9j/4AAQSkZJRgABAgAAAQABAAD/
+2wBDAAgGBgcGBQgHBwcJCQgKDBQN
+DAsLDBkSEw8UHRofHh0aHBwgJC4n
+ICIsIxwcKDcpLDAxNDQ0Hyc5PTgy
+PC4zNDL/2wBDAQkJCQwLDBgNDRgy
+IRwhMjIyMjIyMjIyMjIyMjIyMjIy
+MjIyMjIyMjIyMjIyMjIyMjIyMjIy
+MjIyMjIyMjIyMjL/wAARCAAoAMgD
+ASIAAhEBAxEB/8QAHwAAAQUBAQEB
+AQEAAAAAAAAAAAECAwQFBgcICQoL
+/8QAtRAAAgEDAwIEAwUFBAQAAAF9
+AQIDAAQRBRIhMUEGE1FhByJxFDKB
+kaEII0KxwRVS0fAkM2JyggkKFhcY
+GRolJicoKSo0NTY3ODk6Q0RFRkdI
+SUpTVFVWV1hZWmNkZWZnaGlqc3R1
+dnd4eXqDhIWGh4iJipKTlJWWl5iZ
+mqKjpKWmp6ipqrKztLW2t7i5usLD
+xMXGx8jJytLT1NXW19jZ2uHi4+Tl
+5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQF
+BgcICQoL/8QAtREAAgECBAQDBAcF
+BAQAAQJ3AAECAxEEBSExBhJBUQdh
+cRMiMoEIFEKRobHBCSMzUvAVYnLR
+ChYkNOEl8RcYGRomJygpKjU2Nzg5
+OkNERUZHSElKU1RVVldYWVpjZGVm
+Z2hpanN0dXZ3eHl6goOEhYaHiImK
+kpOUlZaXmJmaoqOkpaanqKmqsrO0
+tba3uLm6wsPExcbHyMnK0tPU1dbX
+2Nna4uPk5ebn6Onq8vP09fb3+Pn6
+/9oADAMBAAIRAxEAPwD3eSRi5AJA
+HHFR1HJGXxtkZCPTp+NN23C8B0f3
+YY/lQImoqDzpFPzwMB/sndXOeNte
+1fTNBdtA06W7vX+Xeqhvs44G7Z1d
+ueAAQMEngYKbsrl04OpNQXXudQ6l
+o2UMVJBAI7VleaY+Y9QLHph1bH9a
+8j0n4S654kg/tTXdYa2uJ1VgJlae
+Y8Y/eZYbTgLgZJwcHBGKkvPD3xG8
+Lai89pey6taqpbc03mB0DZ2mNzuD
+EKPuZPOAx5rJVZbuOh3ywFFvlhWT
+ku+i+/Znrv2q6j48y3l77t4/xFSf
+bpk/1lo4A+8w6e56VzuseJNI0Dwz
+ZazqFjfBLlkj8pVAlR2QthlLAAja
+c81e0Gax8SaJbatYm4jgn3bVnVdw
+2sVOQCR1U9615ot2OF0aih7RrS9r
++ZqrqduzAEOo9SKmS8t3ziVRj+9x
+/OqUlhdMuGmMgz03E/zrj/iLda5o
+/hr7fprLC0M6edIsaECM5HcYPzFO
+nP60SairhRpurUVNbvuehqyuoZWD
+A9wc0tea+DtdfU/BJ1a/uhJJa+b9
+rkKhdu3LfdAGfkKngfrXJW/j7TI7
+qDWJ/CqWoluHxfW0imYyKFZv4VJz
+vXdk4IYg55FQ6sUk+50wwFaU5wSv
+y6f1do93orzrx5qGlT6VFpniHVLm
+zhnk3gQKcybOqthSMZZTgjqB6VP4
+Dv8Aw5pmjDT9BukulZ3nffN+9Y5C
+lmQgEdFHQDp65Nc3vcpl7D9z7XX7
+tPvO+orOk1eJIWcQTSOqk+Wm3LHH
+QEkD88Uafq6X0TPLbT2ThseXclMk
+ccgozDHPrng8VRhbS5o0V4J8Ef8A
+kdLz/sHv/wCjI697rOnPnjc6sbhf
+q1X2d7hRRXn2o/GDw/pmp3dhNZ6m
+0trM8LlIoypZWIOMv04qpTjHcyo0
+KlZtU1ex6DRXndp8aPC1xcpFLHqF
+qjZzNNCpVeO+xmb24B616DDNFcQx
+zQyJJFIodHRgVZSMggjqDRGcZbMK
+2Hq0be0i1cfRRRVGI5ZGUjkkelFN
+ooAKKKKACvDPjNJe2PjXTr62e4tz
+9hCR3EZKfMHfcAw74YZ9mHrXudc1
+418HW3jPSY7SWf7NPDJ5kNwIw5Xs
+ykcHBHYEchT2xWdWLlGyO3L68KFd
+SntszatWs9Qs4L22O6GeNZYnUFcq
+wyDjtwe9cZ8TNbsPD+m6ebqG4u5p
+LgvDEl1JAy7UIZw6DIwHC477/auR
+s/C/xR8KJ9i0a6Se1ZQcRTRvGhyx
+wFmA2nkk7Rg5HJ7cjpVrc+MvHMNl
+4m1eWCZ5DHI1zkPkMT5KAjCEkkAH
+AB6AnCnKdaVuW1mzvw+XUlUdX2il
+COujd7edtjudd8SX2nfDTTdV0ma7
+tZbi7AP2w+dKEYSNt3ODuXgbSeSo
+HrXa+ALl9T8E6depFb2fmebmC2i2
+xLiRh8q54zjJ9ya5D4wQxWfheC1t
+40jgW+i2IqgBQIpMAAcADPStf4a+
+ItDsPh/plteazp9vOnm7oprpEZcy
+uRkE5HBBqlJqrZvoZVacamCVSEdX
+J+ttTvs3C9kcD04JrD8Y6dJrvhDU
+9N8ibzZYS0QjYcupDICTwAWUA+3c
+Vp2OuaRqczQ2Gq2N3Kq7ylvcJIwX
+IGcA9OR+dX62dpKx5kXOlNS2a1PC
+tL07xJ4c8BeIdJuLC4We98v7HHBA
+LjduO2bLIG25TaPmI/2ec1R1nwq2
+nfCDTL+Wyu47/wC3vJOJUZTCj5Tl
+cDAPlxcnueDzinyfDvxzpGp30egw
+3kVk0zCKSO/jjaWMMdhbDjnB9B1P
+Ar2TUdFQeF5rKG3GozxWu2JL0iTz
+5FX5PMzgElgCTxzzxXLGnzJppqyP
+erYtUZxlGSlzSu7adLa6u3373PCP
+G3iObxZNoEEF29/LHYxrIiQFW+1P
+xIoGAWJwnTI9KseJdCvvhl4usr+w
+KyW5y9q85WTfhQJFcYH97sBwwwcj
+jstE8MTx6zbajrngmy0w27G4l1CH
+UFSGExgsreSrkAfKoPOOpNZ+sNpX
+xY8RxW1hql9bzWkbIiNaF4ZFySZF
++YbOwJbGcoMZGKlwbV38T2/pm0MT
+CMlTiv3aT5tmtf8ADf8A4bdGD4Q0
+658e+O5dX1JhHbwyLPctA5iIOP3a
+JjkfdAz1wp+bOM+8DTrVySkjfRWB
+xXlfhLw3rvgXxgI4bmyvre5wk9sJ
+zHKIN2BcGM8fKfTd1KjrkesT31lY
+WU95LKkUEMbSyMByFUEk4HJ4Breg
+uWLvueXmlRVKsVTacbK1v8jwj4N2
+/wBp8X3ab9uLBznGf+Wkde4Gxu1O
+1Lk7R0yxH6V4t8Ef+R0vP+we/wD6
+Mjr3ulhvgHnP+9P0Rn/8TJH/AIZA
+Ppg/yNfPsN5ptj8Wr661yGGSxS/u
+/Pjlj8xCT5gGVwc/MR2NfSVfOMFr
+pN58Yb+31xol019Qu/OM03lLx5hX
+LZGPmA70sR9n1Lyi1qt725em/wAv
+MufELWvBmqaVaJ4esbeG+Scl5La2
+8lRHt5DcLkk7ccHGDyM8+o/DsNpX
+gTTLK/R7e5QSM0bryA0jMM46cMOD
+yK4Hx3onw8sfC8s+h3Vp/aQkQQrb
+XxnL5PzBhubA25OeOQOecHqfg/PJ
+qfgiRb1vO+z3bQRFhysYRGC564BY
+49uOgAqaelXXt0NsYlLAr2d7KX2t
+/wDhtT0CO6gl+7Kuc4wTg/rU1U30
+23bGAyf7p6/nTobLyJVaOZ9g6oe5
+rqPBLVFFFADpFKueOD0ptFFABRRR
+QAVzV34A8MXmrPqkumbb55BKZoZ5
+YjvH8Q2MADkZyOc89aKKTinuXCpO
+m7wbXoJ4v8K2viqG1tL1rlYFlDk2
+5AYEAjkkEY+Y9u1c3/wpHw1/z/at
+/wB/Y/8A43RRUypxk7tG1LGV6UeW
+Emkbnhb4daR4R1OW/sLm+klkhMJF
+w6FdpZT2Uc/KK66iiqjFRVkZVas6
+suabuwooopmZm69oya/pMumy3l3a
+wzcStasqs691JKng98denQkHM8K+
+BtG8Iee+nrLLPNw1xcMGcL/dBAAA
+yM9OT1zgYKKnlV79TVVqig6afuvo
+HirwNo3i/wAh9QWWKeHhbi3YK5X+
+6SQQRk56cHpjJzga78KY9W0rS9Ph
+126SLT/MEbXUSzPtbZhcjZwuzjOe
+uOgAoopOnF7o0p4yvTsoy228je8J
+eCrHwjpr21rPNLLMweedgql2AAwM
+DhepAJONx5rf2XCniVX9mXH8qKKp
+JJWRjUqSqSc5u7Yvmyr9+EkDqVOf
+0rz/AFD4T+HNU1W6vri71WOe7neZ
+kDoBuZiTj5Dxk+tFFEoRluiqVepR
+d6btcSH4KeGI5o5HudTlVWBMbzIF
+cA9DhAcH2IPvXfafp9ppWnw2NjAk
+FrCu2ONOgH9SepJ5JOTRRSjCMdkV
+WxNasrVJNlmiiiqMBVUscCiiigD/
+2Q=="
+                            
+                            
+aria-describedby="button-add
+on2" />
+
+                            
+                        
+<button class="btn 
+btn-success" type="button"
+                            
+                            
+onclick="loadCaptcha()" 
+id="button-addon2"> <i
+                            
+                            
+    class="fa fa-refresh" ar
+ia-hidden="true"></i></butto
+n>
+                            
+                    
+                            
+                </div>
+                            
+            </div>
+                            
+        </div>
+                            
+        <div class="mb-3">
+                            
+            <input 
+type="text" 
+class="form-control 
+form-control-sm" 
+autocomplete="off"
+                            
+                
+maxlength="6" 
+onkeyup="this.value = 
+this.value.toUpperCase()"
+                            
+                
+id="captchaStr" 
+name="captchaStr" aria-descr
+ibedby="captchaHelp"
+                            
+                
+placeholder="Enter CAPTCHA 
+shown above">
+                            
+        </div>
+                            
+    
+
+                            
+    <!-- GOOGLE CAPTCHA  -->
+
+                            
+    
+
+                            
+    <button
+                            
+        type="button" onclic
+k="javascript:callBuiltValid
+ation();" id="submitBtn"
+                            
+        class="btn btn-sm 
+btn-primary 
+float-end">Submit</button>
+
+                            
+    
+                            
+</form>
+Login attempt with:
+Username: 24MIS7049
+Captcha Answer: QLWXJB
+Response URL: https://vtop.v
+itap.ac.in/vtop/login/error
+Response Status: 200 OK
+Login failed. Searching for 
+error messages...
+Unknown error. Snippet: 
+<!DOCTYPE html>
+<!--[if lt IE 7]>      
+<html class="no-js lt-ie9 
+lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         
+<html class="no-js lt-ie9 
+lt-ie8"> <![endif]-->
+<!--[if IE 8]>         
+<html class="no-js lt-ie9"> 
+<![endif]-->
+<!--[if gt IE 8]>      
+<html class="no-js"> 
+<![endif]-->
+<html>
+
+<head>
+
+    
+
+        <meta 
+charset="utf-8">
+        <base href="https://
+vtop.vitap.ac.in/vtop/" />
+        <meta http-equiv="X-
+UA-Compatible" 
+content="IE=edge">
+        <title>VIT-AP - 
+VTOP</title>
+        <meta 
+name="description" 
+content="">
+        <meta content="width
+=device-width, 
+initial-scale=1, 
+maximum-scale=1, 
+user-scalable=no" 
+name="viewport" />
+        <meta 
+charset="ISO-8859-1">
+        <meta 
+name="description" 
+content="vtop" />
+        <meta name="robots" 
+content="NOODP,NOYDIR" />
+        <meta 
+name="keywords" content=" 
+vtop " />
+        <meta name="robots" 
+content="index, follow" />
+        <link rel="icon" 
+type="image/png" href="asset
+s/img/favicon.ico">
+        <meta 
+http-equiv="cache-control" 
+content="max-age=0" />
+        <meta 
+http-equiv="cache-control" 
+content="no-cache" />
+        <meta 
+http-equiv="expires" 
+content="0" />
+        <meta http-equiv="X-
+UA-Compatible" 
+content="IE-Edge" />
+    
+    <link rel="stylesheet" 
+type="text/css" 
+href="/vtop/get/bs/css/1">
+    <link rel="stylesheet" 
+type="text/css" 
+href="/vtop/get/ic/css/2">
+    <link rel="stylesheet" 
+type="text/css" href="/vtop/
+assets/css/PreLogin.css" />
+    <script src="https://www
+.google.com/recaptcha/api.js
+" async="async" 
+defer="defer"></script>
+
+</head>
+
+
+<body 
+class="WhiteBackground">
+    
+        <nav class="navbar 
+navbar-expand-lg bg-light 
+headerBackgroundColor py-1 
+fixed-top shadow" 
+id="vtopOpenPageHeader">
+            <div 
+class="container-fluid 
+justify-content-start">
+                <a 
+class="navbar-brand" 
+href="javacript:void(0);">
+                    <img src
+="/vtop/assets/img/VIT_AP_lo
+go.png" width='170px' 
+alt="" />
+                </a>
+            
+Login attempt 2 failed: Auth
+enticationFailed("Unknown 
+error content. URL: https://
+vtop.vitap.ac.in/vtop/login/
+error")
+Initial page loaded. Form 
+snippet:
+<form class="text-center" 
+id="stdForm" action="/vtop/p
+relogin/setup" 
+method="post"><input 
+type="hidden" name="_csrf" v
+alue="72ab22cc-db12-4045-847
+6-95c52a89ef7e"/>
+                    <input 
+type="hidden" name="flag" 
+value="VTOP" />
+                    <a 
+href="javascript:void(0);" 
+class="text-decoration-none"
+                        oncl
+ick="javascript:submitForm('
+stdForm')">
+                        
+<div class="d-flex 
+jusitfy-content-start 
+align-items-stretch">
+                            
+<div class="w-50">
+                            
+    <img src="/vtop/assets/i
+mg/students.png" 
+class="img-responsive 
+center imgSize"
+                            
+        alt="..." />
+                            
+</div>
+                            
+<div class="flex-grow-1">
+                            
+    <div class="fw-bold 
+text-primary d-block 
+d-lg-none h6">Student</div>
+                            
+    <div class="fw-bold 
+text-primary d-none 
+d-lg-block h5">Student</div>
+                            
+    <button type="submit" 
+class="btn btn-primary 
+fw-bold"><i
+                            
+            class="fa 
+fa-sign-in 
+fa-3"></i></button>
+                            
+</div>
+                        
+</div>
+                    </a>
+                </form>
+Login page loaded. 
+Searching for form fields...
+Full Login Form: <form 
+id="vtopLoginForm" 
+name="vtopLoginForm" 
+class="form-signin" 
+method="POST"
+                            
+    
+action="/vtop/login"><input 
+type="hidden" name="_csrf" v
+alue="72ab22cc-db12-4045-847
+6-95c52a89ef7e"/>
+
+                            
+    <!-- USERID -->
+
+                            
+    <div class="input-group 
+input-group-sm mb-3">
+                            
+        <input type="text" 
+class="form-control" 
+placeholder="Username" 
+aria-label="Username"
+                            
+            aria-describedby
+="basic-addon1" 
+id="username" 
+name="username"
+                            
+            
+onkeyup="this.value = 
+this.value.toUpperCase()" 
+autocomplete="off">
+                            
+        <span 
+class="input-group-text" 
+id="basic-addon1"><i 
+class="fa fa-user 
+text-primary"
+                            
+                aria-hidden=
+"true"></i></span>
+                            
+    </div>
+
+                            
+    <!-- PASSWORD -->
+
+                            
+    <div class="input-group 
+input-group-sm mb-3">
+                            
+        <input 
+type="password" 
+class="form-control" 
+placeholder="Password" 
+id="password"
+                            
+            name="password" 
+aria-describedby="basic-addo
+n2">
+                            
+        <button 
+id="basic-addon2" 
+class="btn btn-light 
+border-secondary" 
+type="button">
+                            
+            <i class="fa 
+fa-eye text-danger fw-bold" 
+id="passwordIcon"
+                            
+                onclick="jav
+ascript:toggleEye();" 
+aria-hidden="false"></i>
+                            
+        </button>
+                            
+    </div>
+
+                            
+    <!-- IN BUILT CAPTCHA  
+-->
+
+                            
+    
+
+                            
+        <div class="row">
+                            
+            <div 
+class="col-7 mx-auto">
+                            
+                <div 
+class="input-group 
+input-group-sm border  
+mb-3" id="captchaBlock">
+                            
+                    
+
+                            
+                        
+<img class="form-control 
+img-fluid bg-light 
+border-0" height="325"
+                            
+                            
+src="data:image/jpeg;base64,
+/9j/4AAQSkZJRgABAgAAAQABAAD/
+2wBDAAgGBgcGBQgHBwcJCQgKDBQN
+DAsLDBkSEw8UHRofHh0aHBwgJC4n
+ICIsIxwcKDcpLDAxNDQ0Hyc5PTgy
+PC4zNDL/2wBDAQkJCQwLDBgNDRgy
+IRwhMjIyMjIyMjIyMjIyMjIyMjIy
+MjIyMjIyMjIyMjIyMjIyMjIyMjIy
+MjIyMjIyMjIyMjL/wAARCAAoAMgD
+ASIAAhEBAxEB/8QAHwAAAQUBAQEB
+AQEAAAAAAAAAAAECAwQFBgcICQoL
+/8QAtRAAAgEDAwIEAwUFBAQAAAF9
+AQIDAAQRBRIhMUEGE1FhByJxFDKB
+kaEII0KxwRVS0fAkM2JyggkKFhcY
+GRolJicoKSo0NTY3ODk6Q0RFRkdI
+SUpTVFVWV1hZWmNkZWZnaGlqc3R1
+dnd4eXqDhIWGh4iJipKTlJWWl5iZ
+mqKjpKWmp6ipqrKztLW2t7i5usLD
+xMXGx8jJytLT1NXW19jZ2uHi4+Tl
+5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQF
+BgcICQoL/8QAtREAAgECBAQDBAcF
+BAQAAQJ3AAECAxEEBSExBhJBUQdh
+cRMiMoEIFEKRobHBCSMzUvAVYnLR
+ChYkNOEl8RcYGRomJygpKjU2Nzg5
+OkNERUZHSElKU1RVVldYWVpjZGVm
+Z2hpanN0dXZ3eHl6goOEhYaHiImK
+kpOUlZaXmJmaoqOkpaanqKmqsrO0
+tba3uLm6wsPExcbHyMnK0tPU1dbX
+2Nna4uPk5ebn6Onq8vP09fb3+Pn6
+/9oADAMBAAIRAxEAPwD0C3t2maIC
+Jn3swAVwucAHuOMZqzc6c8Fu0htJ
+YwuPmadWA59AKNOuYYJbYyPtCSSF
+uCcAqAP1FaGp6nZ3GnyxRTbnbGBt
+I7j2pkFT+yJf+fGf/wACU/wqK205
+57dZBaSyBs/Ms6qDz6EVt/2zp/8A
+z8f+ON/hXlXxG0i+17T9Di0yDz3t
+ftHnDeq7dxTb94jOcHpUzk4xulc3
+w9KFWqoSlyp9Tuo9Od7iaMWkpMe3
+KidQVyO5xzRJpzpcQxm0lBk3YUzq
+S2B2OOKb4VuItN0m1gu38uRLO2iZ
+cE4ZIwrDj0NcB8UtE1HxH4ntrzSb
+f7RAlmsTPvVMMHckYYg9GFKc3GN0
+rl0MPTq1fZymorXX+meg3OnPBbtI
+bSWMLj5mnVgOfQCpf7Il/wCfGf8A
+8CU/wqxq2rWs1iYYS8rSMASq4CAc
+5OcccY4yckcYyRYtPEFncWySyrLa
+u2cwzKCy899hZffgnrV3Oe3UyrbT
+nnt1kFpLIGz8yzqoPPoRRHpzvcTR
+i0lJj25UTqCuR3OOabb+Jv7PgW1/
+sfULjZn97CYdrZOeN0gPfHIqHxE8
++o6Xq9vpOo/Y7y48nyLjc8eNrAt8
+ygsOAR070m97FRppuKbST/AsSac6
+XEMZtJQZN2FM6ktgdjjii5054Ldp
+DaSxhcfM06sBz6AV5XqfwpFtas+n
+64l7MFJET2piDEdtxY8nnHbPUgcj
+sPBt54jTw/f6f4ld3ZWQ2kksgkkc
+FiXBYE5AwMZ55IzgADOM5N2lGx11
+sLQjTdSlVUrdLWfyT3Op/siX/nxn
+/wDAlP8ACorbTnnt1kFpLIGz8yzq
+oPPoRWxNrljHDJIjvKyqSI0UhnIH
+QZwMn3IHvWBp/itrSxjgk0HVCy5y
+Va3xySf+etaN2OOMObb80Tx6c73E
+0YtJSY9uVE6grkdzjmiTTnS4hjNp
+KDJuwpnUlsDsccVa03WbeWe5up45
+bTztuIpgCwwCOdhYe/XvU1xqdm+o
+WcqzZSPfuO08ZHHamS1bQz7nTngt
+2kNpLGFx8zTqwHPoBUv9kS/8+M//
+AIEp/hXl3w/8O6romrX0+o2vkxy2
+ZiRvMVst5kbY+Unsp/Krfiq38T+O
+9fgtrmH+y9Djk/d75FfaO8jqjEs5
+HAA4GcZ5Zjj7WXLfl1PQeCpe2cPa
+rlSvfT8FfU9BttOee3WQWksgbPzL
+Oqg8+hFEenO9xNGLSUmPblROoK5H
+c45p3haPR/DmgQadbkRBCWc7CWdi
+fvMQOSRj8gOAAKvW+p2aaheStNhJ
+Nm07Tzgc9q1V+pwSUU/dd0Z8mnOl
+xDGbSUGTdhTOpLYHY44oudOeC3aQ
+2ksYXHzNOrAc+gFQT+K2kvrWcaDq
+m2LfuBa3ycjHH72tS91a1vdIIUuk
+siqfKdfmU5BIJGRkexI9zQnccoOO
+/wCaK/8AZEv/AD4z/wDgSn+FRW2n
+PPbrILSWQNn5lnVQefQitv8AtnT/
+APn4/wDHG/wqppmp2dvp8UUs211z
+kbSe59qZOhjXFu0LSgxMmxlBDOGx
+kE9hznFFWdRuYZ5bkxvuDyRleCMg
+KQf1NFMRLpH+us/+usv/AKAta2s/
+8gmf/gP/AKEKxNOtoZ5bYSJuDySB
+uSMgKCP1NaGp6ZZ2+nyyxQ7XXGDu
+J7j3pDNqvDvi9/yCfDP/AG9f+hR1
+7F/Y2n/8+/8A4+3+NeZePfB+reI9
+P0WXRbD7Q8fn+efORMZK7fvMPQ9K
+xrJum0j0MsnGGLhKbstfyZW0/wAL
++LtU8L6NHpGu/ZJIrcSSt9rlj3pI
+A0S5UHO1eMHgdBxXCeN9H1zRNaht
+tf1L7fdtbrIkvnvLhCzALlwD1DHH
+TmvdvDGipBptvZX1vtntrS3R0352
+v5Y3DIODyK4P4m+B9X1XxRZvoune
+bA1oEz56L84ZyR8zA9CtZVaXuXW+
+h6GAx1sQ4zaUdddF1vud/wCM+mh/
+9hA/+k89eMWvirVtR8JaV4I0G3l8
+6TzEuGT7026R22A/wptOWJx3BwoO
+713xXp9raPokkEW1jfkE7iePs83q
+a8bbwRfL4G07xbpcksmA7XUa8PDs
+kYCRcfwgKM9x16Z2la99P62Jyz2f
+L+8t0tfa/v2PYPh14Ns/DOjLc4WX
+U7kET3HoAfuJ6Lx9SeT0AHTWv/IW
+1D/tn/6DXn3w48V6X4mgXTNTjVNZ
+jBIJYqLlRzlQDgMB1X2yOMhdXxV4
+Tutet7i10e7WxvLWeKWGRnZRgoys
+NwyRkMTnB6Y75raDjyXgediKdV4n
+lxLs316f8Mch4x8D+Nb/AFK8Kan9
+ttbq4lkt7L7a/Cb9wXa+EGBjjOOO
+O1S/DTxRBdaBeeHRp0VtJbxi4WWA
+HEo3IrF8knfkjnpjjChRnLutF+KU
+oW1ljkUzZ2+XNboxxzwykEfnXV+F
+vhwfCOn3l/f3EVxqEiKi+SGCwrv5
+AJI3bht6qMY4rGCftE4p+dz0sRUg
+sJKnWnFvpy/qdr4u/wCRL13/ALB9
+x/6LavKfgvpGm6r/AG3/AGjp1pee
+X5Gz7RCsm3PmZxuBxnA/KvSfFWk2
+Mfg/W5Egwy2E5B3twRG3vXl/wgut
+Ftv7Z/ti9tLbd5HlfaLgRbv9ZnGS
+M9vzqqlvaxuYYTm+oVeXe629UdP4
++8FWOoaNqU1miWjaRCZreGILHFtI
+DSZUL1wpxjHJ5ql8Itfu9Tgj0y7d
+5RpzEQyO2SI3Q4Tp0XYcZJ4bHAAp
+/j3xLo+naLeW9kqXZ1GJorSaJ/Mi
+UcLISwbrhjjryOah+FPhqe0s1vtQ
+idI9SbMUTjaTGikh85zhixxwOFzy
+CKNPbLl7ajXN/Z0va9/dv66/r+Jw
+Xw+tJ7jxdBLEm5LaN5ZTkDapXZn3
++Z1HHrXpnwi8VaTPpMfh5beKy1CL
+LgL0u/V8nkvgcj0GRwMLheCPA+v+
+HtSvb3V9O+zwfZCiP58b/OZI+MKx
+PQNVnxr8J7uPUo9S8Iw8O+XtVlEZ
+hcch0ZiOOOmcg9OOFzhGcIqSR2Yq
+rh8RXlSnOyaVnfS6vv8Aeeq6N/yC
+YP8AgX/oRrym0sv+Fl6xoV1qQxbN
+9supog+D5SyKqRggDOMoCeCQCc5r
+sPBkOoX2kxJ4g0SSG6UNm7WdDHNg
+4Hyq+VbrxjHy5yM4rikeH4f6poNl
+rK+ZaIby3mkCkny2kVkkAVuM/ISO
+SASME1tNpq72/wCCjzMLCUJOMGnP
+pZ3+zK9vwO51Dw/4P0WXTRdabo1r
+agNHvuYowGwvAZn+8eOpJJqtpmne
+ENLttSTwze2jvcRxGWCC8E2Ajn5s
+biw+/g846dO9DxCngfxRbafbPr1r
+BauxnZorxEcfKdoYPnb948EA1558
+LEVtf1AsMlLBivsfNiH8iaTklNJJ
+GsKE54WpOcpJrdPZ9j6Mqho3/IJg
+/wCBf+hGj+xtP/59/wDx9v8AGqmm
+aZZ3GnxSyw7nbOTuI7n3rc8gqav/
+AK68/wCusX/oDUVFqNtDBLciNNoS
+SMLyTgFST+oopiK1vcNC0RErJsZi
+CqBsZAHc85xVm51F57dozdyyBsfK
+0CqDz6g0UUwJf7Xl/wCf6f8A8Bk/
+xqK21F4LdYxdyxhc/KsCsBz6k0UU
+guEeoulxNILuUGTblhApLYHcZ4ok
+1F3uIZDdykx7sMYFBXI7DPNFFMCD
+UJkv0h8+eWVoJPNiDRKgDbWXOQf7
+rN+dGlG30TTYdO064nhtIc7I/JVs
+ZJY8sxPUmiilZbj55W5b6f1/mznY
+vBfhhbhbsW00FyH8xWgZ12NnIK4c
+Yx2wBjtXUx6i6XE0gu5QZNuWECkt
+gdxniiikopbIudapUtzybt3YSai7
+3EMhu5SY92GMCgrkdhnmi51F57do
+zdyyBsfK0CqDz6g0UVRmJd3i39lP
+Z3N3O8E8bRSJ9nUblYYIyGyOD2rk
+k8BeEigMllKrdwruR+fmCiipcIvd
+GtOvVpq0JNejaL8Phrw/GLWI2oeC
+y3/Zkli81Rv+9lWYg8+ufbFb8mou
+9xDIbuUmPdhjAoK5HYZ5oopqKWxE
+qk5/E2wudRee3aM3csgbHytAqg8+
+oNS/2vL/AM/0/wD4DJ/jRRQTcitt
+ReC3WMXcsYXPyrArAc+pNZOs6XpX
+iJiNWRrgKwZH8sK2cYPKsCB7A4OA
+T0FFFDSejKjOUHzRdmY58BeEt6gW
+UpXncS7gj6DzOa0tM0DRNCW4bSoW
+iknUI5ZMkqDnG4sSBnnjrgZ6Ciip
+UIp3SNZ4qvNcsptr1Z0P9ry/8/0/
+/gMn+NRW2ovBbrGLuWMLn5VgVgOf
+UmiiqMLla4uGmaUmVn3spJZAucAj
+seMZooopgf/Z"
+                            
+                            
+aria-describedby="button-add
+on2" />
+
+                            
+                        
+<button class="btn 
+btn-success" type="button"
+                            
+                            
+onclick="loadCaptcha()" 
+id="button-addon2"> <i
+                            
+                            
+    class="fa fa-refresh" ar
+ia-hidden="true"></i></butto
+n>
+                            
+                    
+                            
+                </div>
+                            
+            </div>
+                            
+        </div>
+                            
+        <div class="mb-3">
+                            
+            <input 
+type="text" 
+class="form-control 
+form-control-sm" 
+autocomplete="off"
+                            
+                
+maxlength="6" 
+onkeyup="this.value = 
+this.value.toUpperCase()"
+                            
+                
+id="captchaStr" 
+name="captchaStr" aria-descr
+ibedby="captchaHelp"
+                            
+                
+placeholder="Enter CAPTCHA 
+shown above">
+                            
+        </div>
+                            
+    
+
+                            
+    <!-- GOOGLE CAPTCHA  -->
+
+                            
+    
+
+                            
+    <button
+                            
+        type="button" onclic
+k="javascript:callBuiltValid
+ation();" id="submitBtn"
+                            
+        class="btn btn-sm 
+btn-primary 
+float-end">Submit</button>
+
+                            
+    
+                            
+</form>
+Login attempt with:
+Username: 24MIS7049
+Captcha Answer: HK3DKG
+Response URL: https://vtop.v
+itap.ac.in/vtop/login/error
+Response Status: 200 OK
+Login failed. Searching for 
+error messages...
+Unknown error. Snippet: 
+<!DOCTYPE html>
+<!--[if lt IE 7]>      
+<html class="no-js lt-ie9 
+lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         
+<html class="no-js lt-ie9 
+lt-ie8"> <![endif]-->
+<!--[if IE 8]>         
+<html class="no-js lt-ie9"> 
+<![endif]-->
+<!--[if gt IE 8]>      
+<html class="no-js"> 
+<![endif]-->
+<html>
+
+<head>
+
+    
+
+        <meta 
+charset="utf-8">
+        <base href="https://
+vtop.vitap.ac.in/vtop/" />
+        <meta http-equiv="X-
+UA-Compatible" 
+content="IE=edge">
+        <title>VIT-AP - 
+VTOP</title>
+        <meta 
+name="description" 
+content="">
+        <meta content="width
+=device-width, 
+initial-scale=1, 
+maximum-scale=1, 
+user-scalable=no" 
+name="viewport" />
+        <meta 
+charset="ISO-8859-1">
+        <meta 
+name="description" 
+content="vtop" />
+        <meta name="robots" 
+content="NOODP,NOYDIR" />
+        <meta 
+name="keywords" content=" 
+vtop " />
+        <meta name="robots" 
+content="index, follow" />
+        <link rel="icon" 
+type="image/png" href="asset
+s/img/favicon.ico">
+        <meta 
+http-equiv="cache-control" 
+content="max-age=0" />
+        <meta 
+http-equiv="cache-control" 
+content="no-cache" />
+        <meta 
+http-equiv="expires" 
+content="0" />
+        <meta http-equiv="X-
+UA-Compatible" 
+content="IE-Edge" />
+    
+    <link rel="stylesheet" 
+type="text/css" 
+href="/vtop/get/bs/css/1">
+    <link rel="stylesheet" 
+type="text/css" 
+href="/vtop/get/ic/css/2">
+    <link rel="stylesheet" 
+type="text/css" href="/vtop/
+assets/css/PreLogin.css" />
+    <script src="https://www
+.google.com/recaptcha/api.js
+" async="async" 
+defer="defer"></script>
+
+</head>
+
+
+<body 
+class="WhiteBackground">
+    
+        <nav class="navbar 
+navbar-expand-lg bg-light 
+headerBackgroundColor py-1 
+fixed-top shadow" 
+id="vtopOpenPageHeader">
+            <div 
+class="container-fluid 
+justify-content-start">
+                <a 
+class="navbar-brand" 
+href="javacript:void(0);">
+                    <img src
+="/vtop/assets/img/VIT_AP_lo
+go.png" width='170px' 
+alt="" />
+                </a>
+            
+Login attempt 3 failed: Auth
+enticationFailed("Unknown 
+error content. URL: https://
+vtop.vitap.ac.in/vtop/login/
+error")
+{"details":"AuthenticationFailed(\"Unknown error content. URL: https://vtop.vitap.ac.in/vtop/login/error\")","error":"Login failed after 3 attempts"}

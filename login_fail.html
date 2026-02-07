@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+
+<head>
+
+    
+
+        <meta charset="utf-8">
+        <base href="https://vtop.vitap.ac.in/vtop/" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>VIT-AP - VTOP</title>
+        <meta name="description" content="">
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+        <meta charset="ISO-8859-1">
+        <meta name="description" content="vtop" />
+        <meta name="robots" content="NOODP,NOYDIR" />
+        <meta name="keywords" content=" vtop " />
+        <meta name="robots" content="index, follow" />
+        <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+        <meta http-equiv="cache-control" content="max-age=0" />
+        <meta http-equiv="cache-control" content="no-cache" />
+        <meta http-equiv="expires" content="0" />
+        <meta http-equiv="X-UA-Compatible" content="IE-Edge" />
+    
+    <link rel="stylesheet" type="text/css" href="/vtop/get/bs/css/1">
+    <link rel="stylesheet" type="text/css" href="/vtop/get/ic/css/2">
+    <link rel="stylesheet" type="text/css" href="/vtop/assets/css/PreLogin.css" />
+    <script src="https://www.google.com/recaptcha/api.js" async="async" defer="defer"></script>
+
+</head>
+
+
+<body class="WhiteBackground">
+    
+        <nav class="navbar navbar-expand-lg bg-light headerBackgroundColor py-1 fixed-top shadow" id="vtopOpenPageHeader">
+            <div class="container-fluid justify-content-start">
+                <a class="navbar-brand" href="javacript:void(0);">
+                    <img src="/vtop/assets/img/VIT_AP_logo.png" width='170px' alt="" />
+                </a>
+                <!-- <a class="navbar-brand VITLogoStyle text-light" href="javacript:void(0);"><span
+                        class="h1 fw-bold">VIT</span>
+                </a>
+                <span class="navbar-text text-light">(AP Campus)</span> -->
+
+            </div>
+        </nav>
+
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-11 col-sm-8 col-md-6 col-lg-6 col-xl-4 WhiteBackground shadow-lg mx-auto p-0 mt-5" id="loginBox">
+                
+                    <div class="card border-0">
+                        <div class="card-header loginBoxBorder">
+                            <h4 class="fw-bold">VTOP Login</h4>
+                        </div>
+                        <div class="card-body" id="bodyContent">
+                            <form id="vtopLoginForm" name="vtopLoginForm" class="form-signin" method="POST"
+                                action="/vtop/login"><input type="hidden" name="_csrf" value="44e5b28f-9474-415c-871f-a4f9001824a8"/>
+
+                                <!-- USERID -->
+
+                                <div class="input-group input-group-sm mb-3">
+                                    <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                                        aria-describedby="basic-addon1" id="username" name="username"
+                                        onkeyup="this.value = this.value.toUpperCase()" autocomplete="off">
+                                    <span class="input-group-text" id="basic-addon1"><i class="fa fa-user text-primary"
+                                            aria-hidden="true"></i></span>
+                                </div>
+
+                                <!-- PASSWORD -->
+
+                                <div class="input-group input-group-sm mb-3">
+                                    <input type="password" class="form-control" placeholder="Password" id="password"
+                                        name="password" aria-describedby="basic-addon2">
+                                    <button id="basic-addon2" class="btn btn-light border-secondary" type="button">
+                                        <i class="fa fa-eye text-danger fw-bold" id="passwordIcon"
+                                            onclick="javascript:toggleEye();" aria-hidden="false"></i>
+                                    </button>
+                                </div>
+
+                                <!-- IN BUILT CAPTCHA  -->
+
+                                
+
+                                    <div class="row">
+                                        <div class="col-7 mx-auto">
+                                            <div class="input-group input-group-sm border  mb-3" id="captchaBlock">
+                                                
+
+                                                    <img class="form-control img-fluid bg-light border-0" height="325"
+                                                        src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAoAMgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3d5SWODgA44NUrlbstmCRQoX7p6k/lTmt9pLQsY29OxpROUOJl2H+91U0CKxuLxFIktidw4MZ6fzqL7XHIrRmeREII+dAf1FagIIyDkGvm74oSyQ/E7U5YnaORGgZHQ4KkRIQQexrOrU9mr2OzA4P63UcOa1lf8j3lLZwP9Hulyw+6r4JqffqMQyyLJn26flXgXxQ1u21rxFaPZLPHbpYwuI5eAGkXzMgAkD5XQH3X0ANe0+FbSceD9EeG5Zc2EBCN05jXP8AnFEKqnJxXQrEYGVCjCrJ6y6djX/tIIcTQSRnt7/nimNqwDELFuAPB3Yz+lYHijxvH4La0GpwzTi6L7DAqn7u3PUjH3h2rnP+FxeFJB+80rUlI6bI4/8A4sU3UhF2bMqeCxFWKnCLaZ6L/asH9yT8h/jUv9oWv/PX/wAdP+FYeg6jp2v6PBqlhPPbpLuwJ8KwwxU9DjqOxpNY8LW2uWSW1/bx3dusgkRQ5Q5AIByCOxPfvV3urox5eWfLU0tv/Wh0P2mD/ntH/wB9Cpa8U8V+B/B3h23N/qEuo2gkcJDaW8qszkY3bA4JwOpJbHOM8gV0fw88HR6Lp8+oW1/LewX6xvFJ9nMBAXdhtrHJB3ZHTjkZzWanJy5WvxOqphqUaPtYzfleNr/O7Wh6RRWX5cyfMbqdcdN6nBP5msLUfFl3peqrZvperXKHaftNtaebDg9SSvzcc5GM8cA5GdG0tzkhCU3aKOxoqh9ovgocwIyf7Jzn8jWT4qvZD4P1tXtZEU2E43HPGY29qHorhCPNJR7nS0V4J4A+HOm+MPDF3fXN3dwXaXDwRmMqUGEUglSMnlugI49OtdR8PfFWr2nia68GeI5nnuomk+z3EpdnZl+YrkjLKVy6sccDHOQBjGre11a56FbL1DnVOfM4bq1tO63uep0UV5r/AMLu8Nf8+Orf9+o//jlaSnGO7OSjh6ta/s43selUVzXhXxzo3i/z009pYp4eWt7hQrlf7wAJBGTjrweuMjPS0001dGdSnOnLlmrMKKKKZA5ZGUjkkelFNooAKa670K8cjuM06igCqlvLCcxyAjuG4Feeax4f0O7+IaNcT3v9qarHPbFYXjMUWLYKwbjIPluCOvJB6V6bXmv/AAiutf8AC7f+Eh+xf8Sr/nv5qf8APts+7nd97jpWdTW2l9TswT5XN83L7r+fkYHiHwjZWPh6WTVtQvtJgnuLWJWvYY53zDDIiACBsYKMBzz8hzndXqHh39z4Y0mK2/0iBLOFY5vueYoQYbaeRkc4PSsH4peH9U8R+GLaz0m1+0TpeLKyeYqYUI4JyxA6sK6Xw7aT2HhjSbO5TZPBZwxSJkHayoARkcHkdqUI8s2kjXEVnVw8ZSlrd6aaafeXPPYcNDJn2GR+deffE+1l8Rw6dodtqGmWkrTecYr2YxyyNgomwDOQcuOnUDHevRJporeGSaaRI4o1Lu7sAqqBkkk9AK8W8Bwjxp8UdU8SXMbyWtsxmh8xUG1idsKsvPIRScjoUBz6lV7Q7k4GDTlXvZQV/n0R6jpGl6dpOiWOmhUP2WFY2ZYzHvYD5mIHcnJPJ5JqfyLdOYbqRG9cHp+GK1K4v4n6LrGv+ForHRonmla6Rpo1lWMNGFbruIBG7aceoB7VbfLHRHNTj7aqlOVrvVnCS6Tr/wAQvGa3OpWd3a6LZsuyG+UxEx55UDjLPjkgnA7nC59cgvFtIo7cWqRxRKFVYcBVUDgADgADArznSpPippWmw2X/AAj9jeeXn9/dzrJK2ST8zecM4zgewFdj4Tn8T3ovB4p0eysduz7P9mIO/O7dnDt0+X061nSaT2d2d2OjKUVaUeWOiSafzNifWrG1s5rq5laKGFGkkJQnCgZJwM9q+f7K58Ry+B9d12G7uY1bVIZZp4Z/L+YrJ5h2qR1aSHOBzx/d49c+JOsN4Z8ISXVkXivZpkhgkVQwVidxyG4xtVh0PJH1HJ6fpXxG1jQ4dRuLnSL+0uIfOXT72JD5ykZTIVAMn5WHzDBxnHIqavvSsrmmAXsqLqS5bNrd9tdNOvqeheFLuHXPCml6iz+dLNbr50m0rmUDa/HAHzBugx6cUeLICvg3XCJZDjT5+Ccj/VtXKfDLxHceI9Ku7aO2tbJrKQYitYzHEEfJGBk87g5PTqOuTXVarDfSaRewvZtdrLBJGbcS7fNypG3d/DnpntmtYvmhdHDWg6OJcWrWf/BOQ+Col/4Q28MZTH9oPw3/AFzjrEinEv7RRkiaOYhmQ+W2RuW1KkZ9QQQfcEVraLfa94as5LLSvAhtoWkMjIdWRvnIAJywJ6KPyrpvDfhjTtKun1S3treLVblXWdheSz7gW3Hl8Ek4BJKg/wAzkoNxjHt6ndUrxp1atV/bTSs4vfvZs6f7Rj70Ugx1O3gV8/fDXxvpvg3+1P7Rgu5ftflbPs6K2Nu/OdzD+8K+gf8ASf8Apj+teQ/ApVYa+GUEf6P1H/XWnVT5428zPBOKwtZzV17um3Ub4MhTxN8V5vFFqlvZ2W2WeO3E0TSsdvlEtGrbkLFi5JGM9zkE+zV4p4qS00v43aM2liGGSeSD7WsWD88jlXyP4SyEenXd1Oa9l+zKOFkkUegbinR0uvMnMfedOa2cVZdkvz9Saiodk45EwY+hXApN1yp5jRx/snH862PNJ6KahYqCy7T6ZzRQBJIpVzxwelNoooAKKKKACiiigCnq2nJq+k3WnSTywx3MZid4du7aeGA3AjkZHTvxg81n+FvC1j4R0yWwsJbiSKSYzE3DKW3FVHYDj5RRRS5Ve5oqs1B009GblFFFMzCiiigDnfFng6x8YQ20N/d30MVuzOEtpFVXYgDLAqckc49Nx9a3LS0gsLKCztk2QQRrFGmSdqqMAZPJ4Heiilyq9zR1ZuCg3ojnfDXgPS/Cmp3d7plxfKtypVraSYNEo3ZGBjJI5AJJOCfWuooooUVFWQVKs6suabuxrokgw6qw9CM1BJYW8mfk2k91OP06UUUzMi+wPH/qLh0A52noTXm7/BTSlOBc6g3uJo/6pRRUyjGXxI2o4irRv7OVrm/4W8FaB4WvVuILK5e9YlY7i6cOyhsAgABQPrjPzEZwcV29FFNRUVZEVKs6suao7sKKKKZAqqWOBRRRQB//2Q=="
+                                                        aria-describedby="button-addon2" />
+
+                                                    <button class="btn btn-success" type="button"
+                                                        onclick="loadCaptcha()" id="button-addon2"> <i
+                                                            class="fa fa-refresh" aria-hidden="true"></i></button>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control form-control-sm" autocomplete="off"
+                                            maxlength="6" onkeyup="this.value = this.value.toUpperCase()"
+                                            id="captchaStr" name="captchaStr" aria-describedby="captchaHelp"
+                                            placeholder="Enter CAPTCHA shown above">
+                                    </div>
+                                
+
+                                <!-- GOOGLE CAPTCHA  -->
+
+                                
+
+                                <button
+                                    type="button" onclick="javascript:callBuiltValidation();" id="submitBtn"
+                                    class="btn btn-sm btn-primary float-end">Submit</button>
+
+                                
+                            </form>
+                        </div>
+                        <span class="text-danger text-center" role="alert">
+                            <strong>Number Of Maximum Fail Attempts Reached.Use Forgot Password</strong>
+                        </span>
+                        
+
+                        <div class="card-footer border-0 small">
+                            <a class="fw-bold text-decoration-none" onclick="javascript:resetPassword()"
+                                href="javascript:void(0)">Forgot
+                                Password</a><br />
+                            <a class="fw-bold text-decoration-none " onclick="javascript:forgotUserID()"
+                                href="javascript:void(0)">Forgot
+                                LoginId</a>
+                            <div class="text-end">
+                                <a class="fw-light fst-italic text-success" href="/vtop/open/page"><strong><i>Go to
+                                            Home
+                                            Page</i></strong></a>
+                            </div>
+
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+
+    
+        <form id="sessionExpireCheckForm" action="/vtop/session/expired/out">
+
+        </form>
+        <div class="fixed-bottom text-center text-light py-0 footercolor">
+            <span class="small">Copyright © <span class="trim d-none d-sm-inline-block">2026</span>
+                Software Development Cell, VIT-AP University, Andhra Pradesh-522241.</span>
+        </div>
+
+        <div class="modal" tabindex="-1" id="sessionTimedOut">
+            <div class="modal-dialog modal-dialog-centered modal-sm">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title text-primary" >Sorry !!!</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h3 class="text-danger"> Session Timed Out</h3>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <script type="text/javascript" src="/vtop/get/jq/js/1"></script>
+        <script type="text/javascript" src="/vtop/get/jq/js/3"></script>
+        <script type="text/javascript" src="/vtop/get/bs/js/3"></script>
+        <script type="text/javascript" src="/vtop/get/jq/js/4"></script>
+
+        <script>
+            /*<![CDATA[*/
+
+            var offsetHeight = document.getElementById('vtopOpenPageHeader').offsetHeight;
+            document.body.style.marginTop = offsetHeight + 'px';
+
+            function sessionExpiredCall() {
+                var form = document.getElementById("sessionExpireCheckForm");
+                form.submit();
+            }
+
+            history.pushState(null, null, document.URL);
+            window.addEventListener('popstate', function () {
+                history.pushState(null, null, document.URL);
+            });
+
+            /*]]>*/
+        </script>
+
+    
+
+    <script>
+        /*<![CDATA[*/
+
+        var captchaType=1;
+
+        $(document).ready(function () {
+            $('input').keyup(function (event) {
+                if (event.which === 13) {
+                    event.preventDefault();
+                    if(captchaType===1) {  // built-in captcha validation
+                        callBuiltValidation();
+                    }else if(captchaType===2) {
+                        callGoogleValidation();  // google captcha validation
+                    }
+                }
+            });
+        });
+
+        var isEyeOpened = false;
+
+        function loadCaptcha() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("captchaBlock").innerHTML = this.responseText;
+                    document.getElementById("captchaStr").value = "";
+                }
+            };
+            xhttp.open("GET", "/vtop/get/new/captcha", true);
+            xhttp.send();
+        }
+
+        function callBuiltValidation() {
+
+            var gvalue = document.getElementById("g-recaptcha-response");
+            if (gvalue != null && gvalue != undefined && gvalue != '') {
+                document.getElementById('gResponse').value = gvalue.value;
+            }
+            var form = document.getElementById('vtopLoginForm');
+            form.submit();
+
+        }
+
+        function callGoogleValidation() {
+            grecaptcha.execute();
+        }
+
+        function resetPassword() {
+            $.blockUI({ message: '<h4><img src="assets/gif/ajax-loader_bert.gif" /> few moments...</h4>' });
+            var csrfName = "_csrf";
+            var csrfValue = "44e5b28f-9474-415c-871f-a4f9001824a8";
+            var data = new FormData();
+            data.append(csrfName, csrfValue);
+
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("loginBox").innerHTML = this.responseText;
+                    $.unblockUI();
+                }
+            };
+            xhttp.open("POST", "/vtop/resetPassword", true);
+            xhttp.send(data);
+
+        }
+
+        function forgotUserID() {
+            $.blockUI({ message: '<h4><img src="assets/gif/ajax-loader_bert.gif" /> few moments...</h4>' });
+            var csrfName = "_csrf";
+            var csrfValue = "44e5b28f-9474-415c-871f-a4f9001824a8";
+            var data = new FormData();
+            data.append(csrfName, csrfValue);
+
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("loginBox").innerHTML = this.responseText;
+                    $.unblockUI();
+                }
+            };
+            xhttp.open("POST", "/vtop/forgotUserID", true);
+            xhttp.send(data);
+        }
+
+        function toggleEye() {
+            if (isEyeOpened) {
+                isEyeOpened = false;
+                document.getElementById("passwordIcon").classList.remove('fa-eye-slash');
+                document.getElementById("passwordIcon").classList.add('text-danger');
+                document.getElementById("passwordIcon").classList.remove('text-primary');
+                document.getElementById("passwordIcon").classList.add('fa-eye');
+                document.getElementById("password").type = 'password';
+            } else {
+                isEyeOpened = true;
+                document.getElementById("passwordIcon").classList.add('fa-eye-slash');
+                document.getElementById("passwordIcon").classList.add('text-primary');
+                document.getElementById("passwordIcon").classList.remove('text-danger');
+                document.getElementById("passwordIcon").classList.remove('fa-eye');
+                document.getElementById("password").type = 'text';
+            }
+        }
+
+        function getOTP() {
+            $.blockUI({ message: '<h4><img src="assets/gif/ajax-loader_bert.gif" /> few moments...</h4>' });
+            var form = document.getElementById('forgetPasswordForm');
+            var data = new FormData(form);
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("loginBox").innerHTML = this.responseText;
+                    $.unblockUI();
+                }
+            };
+            xhttp.open("POST", "/vtop/generateOtp", true);
+            xhttp.send(data);
+
+        }
+
+        function verifyOTP() {
+            $.blockUI({ message: '<h4><img src="assets/gif/ajax-loader_bert.gif" /> few moments...</h4>' });
+            var form = document.getElementById('otpVerificationForm');
+            var data = new FormData(form);
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    var reqTarget = this.getResponseHeader('wrapper');
+                    if (reqTarget === 'null' || reqTarget === undefined
+                        || reqTarget === null || reqTarget === '') {
+                        reqTarget = "loginBox";
+                    }
+                    document.getElementById(reqTarget).innerHTML = this.responseText;
+                    $.unblockUI();
+                    var btn = document.getElementById("changePasswordBtn");
+                    if (btn != null) {
+                        btn.addEventListener('click', doChangePassword, false);
+                    }
+                }
+            };
+            xhttp.open("POST", "/vtop/validateOtp", true);
+            xhttp.send(data);
+
+        }
+
+        function regenerateOTP() {
+            $.blockUI({ message: '<h4><img src="assets/gif/ajax-loader_bert.gif" /> few moments...</h4>' });
+            var form = document.getElementById('otpVerificationForm');
+            var data = new FormData(form);
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    var reqTarget = this.getResponseHeader('wrapper');
+                    if (reqTarget === 'null' || reqTarget === undefined
+                        || reqTarget === null || reqTarget === '') {
+                        reqTarget = "loginBox";
+                    }
+                    document.getElementById(reqTarget).innerHTML = this.responseText;
+                    $.unblockUI();
+                }
+            };
+            xhttp.open("POST", "/vtop/resendOtp", true);
+            xhttp.send(data);
+        }
+
+        function getUserIDOTP() {
+            $.blockUI({ message: '<h4><img src="assets/gif/ajax-loader_bert.gif" /> few moments...</h4>' });
+            var form = document.getElementById('forgetUserIDForm');
+            var data = new FormData(form);
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    var reqTarget = this.getResponseHeader('wrapper');
+                    if (reqTarget === 'null' || reqTarget === undefined
+                        || reqTarget === null || reqTarget === '') {
+                        reqTarget = "loginBox";
+                    }
+                    document.getElementById(reqTarget).innerHTML = this.responseText;
+                    $.unblockUI();
+                }
+            };
+            xhttp.open("POST", "/vtop/get/otp/for/forget/userid", true);
+            xhttp.send(data);
+
+        }
+
+        function verifyUserIDOTP() {
+            $.blockUI({ message: '<h4><img src="assets/gif/ajax-loader_bert.gif" /> few moments...</h4>' });
+            var form = document.getElementById('forgetUserIDForm');
+            var data = new FormData(form);
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    var reqTarget = this.getResponseHeader('wrapper');
+                    if (reqTarget === 'null' || reqTarget === undefined
+                        || reqTarget === null || reqTarget === '') {
+                        reqTarget = "loginBox";
+                    }
+                    document.getElementById(reqTarget).innerHTML = this.responseText;
+                    $.unblockUI();
+                }
+            };
+            xhttp.open("POST", "/vtop/validate/user/id/otp", true);
+            xhttp.send(data);
+
+        }
+
+        function resendUserIDOTP() {
+            $.blockUI({ message: '<h4><img src="assets/gif/ajax-loader_bert.gif" /> few moments...</h4>' });
+            var form = document.getElementById('forgetUserIDForm');
+            var data = new FormData(form);
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    var reqTarget = this.getResponseHeader('wrapper');
+                    if (reqTarget === 'null' || reqTarget === undefined
+                        || reqTarget === null || reqTarget === '') {
+                        reqTarget = "loginBox";
+                    }
+                    document.getElementById(reqTarget).innerHTML = this.responseText;
+                    $.unblockUI();
+                }
+            };
+            xhttp.open("POST", "/vtop/resend/otp/for/userid", true);
+            xhttp.send(data);
+        }
+
+
+        function doChangePassword() {
+            $.blockUI({ message: '<h4><img src="assets/gif/ajax-loader_bert.gif" /> few moments...</h4>' });
+            var myform = document.getElementById("changePwdForm");
+            var data = new FormData(myform);
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    var reqTarget = this.getResponseHeader('wrapper');
+                    if (reqTarget === 'null' || reqTarget === undefined
+                        || reqTarget === null || reqTarget === '') {
+                        reqTarget = "loginBox";
+                    }
+                    document.getElementById(reqTarget).innerHTML = this.responseText;
+                    $.unblockUI();
+                }
+            };
+            xhttp.open("POST", "/vtop/allowChangePassword", true);
+            xhttp.send(data);
+        }
+
+
+        function myFunction() {
+            var newPassword = document.getElementById("newPassword");
+            var confirmNewPassword = document.getElementById("confirmNewPassword");
+
+            if (newPassword.type === "password" && confirmNewPassword.type === "password") {
+                newPassword.type = "text";
+                confirmNewPassword.type = "text";
+            } else {
+                newPassword.type = "password";
+                confirmNewPassword.type = "password";
+            }
+        }
+
+        /*]]>*/
+    </script>
+
+
+</body>
+
+</html>

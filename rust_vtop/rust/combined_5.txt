@@ -1,0 +1,50 @@
+﻿cargo :    Compiling 
+rust_lib_vitapmate v0.1.0 (C
+:\Users\harig\Downloads\facu
+lty-availability-tracker-mai
+n\faculty-availability-track
+er-main_orchids\rust_vtop\ru
+st)
+At line:1 char:1
++ cargo run --bin 
+debug_timetable 24MIS7049 
+"Madhavi@1543" 2>&1 | Out-F 
+...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~
+    + CategoryInfo          
+    : NotSpecified: (   Co  
+  mpiling ru...rust_vtop\   
+ rust):String) [], Remot    
+eException
+    + FullyQualifiedErrorId 
+    : NativeCommandError
+ 
+error: unexpected closing 
+delimiter: `}`
+   --> src\api\vtop\vtop_cli
+ent.rs:551:1
+    |
+323 |     async fn 
+perform_login(&mut self, 
+captcha_answer: &str) -> 
+VtopResult<()> {
+    |                       
+                            
+                            
+- this delimiter might not 
+be properly closed...
+...
+394 |         } else {
+    |         - ...as it 
+matches this but it has 
+different indentation
+...
+551 | }
+    | ^ unexpected closing 
+delimiter
+
+error: could not compile 
+`rust_lib_vitapmate` (lib) 
+due to 1 previous error
