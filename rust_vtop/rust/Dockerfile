@@ -13,7 +13,8 @@ WORKDIR /app
 COPY . .
 
 # Build the server specifically
-RUN cargo build --release --bin server
+# -j 1 limits parallel jobs to save RAM during compilation
+RUN cargo build --release --bin server -j 1
 
 # Final stage
 FROM debian:bookworm-slim
