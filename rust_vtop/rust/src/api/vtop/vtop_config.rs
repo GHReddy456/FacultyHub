@@ -44,3 +44,4 @@ impl VtopClientBuilder {
         VtopClient::with_config(self.config, self.session, username.to_uppercase(), password)
     }
 }
+

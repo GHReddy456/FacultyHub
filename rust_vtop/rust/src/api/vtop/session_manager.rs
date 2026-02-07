@@ -69,3 +69,4 @@ impl SessionManager {
         self.is_cookie_external = true;
     }
 }
+

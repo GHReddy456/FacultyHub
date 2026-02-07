@@ -36,3 +36,4 @@ pub async fn find_captivative_portal() -> String {
 
     "".into()
 }
+

@@ -118,3 +118,4 @@ pub fn parse_marks(html: String, sem: String) -> MarksData {
             .as_secs(),
     }
 }
+

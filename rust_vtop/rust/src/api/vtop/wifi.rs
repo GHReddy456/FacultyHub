@@ -194,3 +194,4 @@ pub async fn wifi_login_logout_hostel(
 
     (false, "".into())
 }
+

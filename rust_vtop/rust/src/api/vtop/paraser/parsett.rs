@@ -258,3 +258,4 @@ pub fn parse_semid_timetable(html: String) -> SemesterData {
             .as_secs(),
     }
 }
+

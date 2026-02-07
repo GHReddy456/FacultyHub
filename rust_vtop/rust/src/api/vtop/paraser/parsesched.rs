@@ -130,3 +130,4 @@ pub fn parse_schedule(html: String, sem: String) -> ExamScheduleData {
             .as_secs(),
     }
 }
+

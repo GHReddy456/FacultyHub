@@ -12,7 +12,7 @@ use futures::stream::FuturesUnordered;
 use futures::StreamExt;
 use tokio::task;
 
-#[flutter_rust_bridge::frb(sync)]
+
 pub fn get_vtop_client(username: String, password: String, cookie: Option<String>) -> VtopClient {
     let mut client = VtopClientBuilder::new().build(username, password);
     if let Some(cookie) = cookie {
@@ -23,15 +23,15 @@ pub fn get_vtop_client(username: String, password: String, cookie: Option<String
     return client;
 }
 
-#[flutter_rust_bridge::frb()]
+
 pub async fn vtop_client_login(client: &mut VtopClient) -> Result<(), VtopError> {
     client.login().await
 }
-#[flutter_rust_bridge::frb()]
+
 pub async fn fetch_semesters(client: &mut VtopClient) -> Result<SemesterData, VtopError> {
     client.get_semesters(true).await
 }
-#[flutter_rust_bridge::frb()]
+
 pub async fn fetch_attendance(
     client: &mut VtopClient,
     semester_id: String,
@@ -39,7 +39,7 @@ pub async fn fetch_attendance(
     client.get_attendance(&semester_id).await
 }
 
-#[flutter_rust_bridge::frb()]
+
 pub async fn fetch_full_attendance(
     client: &mut VtopClient,
     semester_id: String,
@@ -51,7 +51,7 @@ pub async fn fetch_full_attendance(
         .await
 }
 
-#[flutter_rust_bridge::frb()]
+
 pub async fn fetch_timetable(
     client: &mut VtopClient,
     semester_id: String,
@@ -59,7 +59,7 @@ pub async fn fetch_timetable(
     client.get_timetable(&semester_id).await
 }
 
-#[flutter_rust_bridge::frb()]
+
 pub async fn fetch_marks(
     client: &mut VtopClient,
     semester_id: String,
@@ -67,7 +67,7 @@ pub async fn fetch_marks(
     client.get_marks(&semester_id).await
 }
 
-#[flutter_rust_bridge::frb()]
+
 pub async fn fetch_exam_shedule(
     client: &mut VtopClient,
     semester_id: String,
@@ -75,18 +75,18 @@ pub async fn fetch_exam_shedule(
     client.get_exam_schedule(&semester_id).await
 }
 
-#[flutter_rust_bridge::frb()]
+
 #[cfg(not(target_arch = "wasm32"))]
 pub async fn fetch_cookies(client: &mut VtopClient) -> Result<Vec<u8>, VtopError> {
     client.get_cookie(true).await.clone()
 }
 
-#[flutter_rust_bridge::frb()]
+
 pub async fn fetch_is_auth(client: &mut VtopClient) -> bool {
     client.is_authenticated().clone()
 }
 
-#[flutter_rust_bridge::frb()]
+
 pub async fn fetch_wifi(username: String, password: String, i: i32) -> (bool, String) {
     if (i != 0) {
         // let k = wifi_login_logout(i, username.clone(), password.clone()).await;
@@ -145,3 +145,4 @@ pub async fn fetch_wifi(username: String, password: String, i: i32) -> (bool, St
         wifi_login_logout(i, username, password).await
     }
 }
+

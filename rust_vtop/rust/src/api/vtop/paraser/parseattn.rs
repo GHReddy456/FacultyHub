@@ -137,3 +137,4 @@ pub fn parse_full_attendance(
         course_type,
     }
 }
+

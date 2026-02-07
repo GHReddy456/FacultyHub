@@ -1,8 +1,8 @@
-use flutter_rust_bridge::frb;
+
 use serde::Serialize;
 
 #[derive(Debug, Clone, Serialize)]
-#[frb(non_opaque)]
+
 pub enum VtopError {
     NetworkError,
     VtopServerError,
@@ -36,3 +36,4 @@ impl std::fmt::Display for VtopError {
 impl std::error::Error for VtopError {}
 
 pub type VtopResult<T> = Result<T, VtopError>;
+
