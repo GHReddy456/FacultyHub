@@ -30,7 +30,7 @@ unexpected_cfgs = { level = "warn", check-cfg = ['cfg(frb_expand)'] }
 
 [profile.release]
 panic = "abort" # Strip expensive panic clean-up logic
-codegen-units = 1 # Compile crates one after another so the compiler can optimize better
-lto = true # Enables link to optimizations
+codegen-units = 16 # Use more units for faster, less memory-intensive build
+lto = false        # Disable link-time optimization to save RAM during build
 opt-level = "s" # Optimize for binary size
 strip = true # Remove debug symbols
